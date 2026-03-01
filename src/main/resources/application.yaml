@@ -3,9 +3,9 @@ spring:
     name: user-service
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/ecommerce
-    username: nguyendat
-    password: nguyendat
+    url: jdbc:postgresql://localhost:5433/user_db
+    username: admin
+    password: password
     driver-class-name: org.postgresql.Driver
 
   jpa:
@@ -61,7 +61,7 @@ keycloak:
     username: admin
     password: admin
   client-id: ecommerce-backend
-  client-secret: e005mACQMg7ZNn0R2eroCqGNh1dVcY43  # Get from Keycloak admin console
+  client-secret: HKB8Lume3aBENR4V8FTmmTfTd2EzTJtg
 
 # Actuator
 management:
