@@ -61,7 +61,7 @@ keycloak:
     username: admin
     password: admin
   client-id: ecommerce-backend
-  client-secret: HKB8Lume3aBENR4V8FTmmTfTd2EzTJtg
+  client-secret: fhIrOyzOYvu9dCAqQKWFXQrQG37jzXOO
 
 # Actuator
 management:
