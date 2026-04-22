@@ -5,5 +5,7 @@ spring:
   kafka:
     properties:
       security.protocol: ${KAFKA_SECURITY_PROTOCOL:SASL_SSL}
-      sasl.mechanism: ${KAFKA_SASL_MECHANISM:SCRAM-SHA-256}
+      sasl.mechanism: ${KAFKA_SASL_MECHANISM:SCRAM-SHA-512}
       sasl.jaas.config: org.apache.kafka.common.security.scram.ScramLoginModule required username="${KAFKA_SASL_USERNAME}" password="${KAFKA_SASL_PASSWORD}";
+      ssl.truststore.type: PEM
+      ssl.truststore.location: ${KAFKA_SSL_CA_CERT_PATH}
