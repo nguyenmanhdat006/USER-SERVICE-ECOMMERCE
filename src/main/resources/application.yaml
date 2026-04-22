@@ -1,4 +1,6 @@
 spring:
+  config:
+    import: optional:file:.env[.properties]
   application:
     name: user-service
 
@@ -50,7 +52,7 @@ keycloak:
     username: ${KEYCLOAK_ADMIN_USERNAME:admin}
     password: ${KEYCLOAK_ADMIN_PASSWORD:admin}
   client-id: ${KEYCLOAK_CLIENT_ID:ecommerce-backend}
-  client-secret: ${KEYCLOAK_CLIENT_SECRET:}
+  client-secret: ${KEYCLOAK_CLIENT_SECRET}
 
 app:
   kafka:
