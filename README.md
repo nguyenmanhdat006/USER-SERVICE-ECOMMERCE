@@ -46,6 +46,29 @@ cp .env.example .env
 
 Sau đó mở `.env` và cập nhật ít nhất `KEYCLOAK_CLIENT_SECRET` theo client secret thực tế trong Keycloak.
 
+### Kết nối Kafka bên ngoài với SASL_PLAINTEXT
+
+Project đã hỗ trợ sẵn profile `kafka-sasl` để kết nối Kafka có xác thực SASL/PLAIN.
+
+Thêm/cập nhật các biến sau trong `.env`:
+
+```bash
+KAFKA_BOOTSTRAP_SERVERS=<host1:9092,host2:9092>
+KAFKA_SECURITY_PROTOCOL=SASL_PLAINTEXT
+KAFKA_SASL_MECHANISM=PLAIN
+KAFKA_SASL_USERNAME=<username>
+KAFKA_SASL_PASSWORD=<password>
+SPRING_PROFILES_ACTIVE=kafka-sasl
+```
+
+Chạy service:
+
+```bash
+mvn spring-boot:run
+```
+
+Lưu ý: `SASL_PLAINTEXT` có xác thực nhưng không mã hóa dữ liệu trên đường truyền. Với môi trường production nên ưu tiên `SASL_SSL`.
+
 ### Prerequisites
 
 - Java 17+
