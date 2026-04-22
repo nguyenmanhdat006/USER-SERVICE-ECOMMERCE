@@ -38,6 +38,14 @@ User Management và Authentication Service sử dụng Spring Boot 3 và Keycloa
 
 ## Cài đặt & Chạy
 
+### Cấu hình môi trường (.env)
+
+```bash
+cp .env.example .env
+```
+
+Sau đó mở `.env` và cập nhật ít nhất `KEYCLOAK_CLIENT_SECRET` theo client secret thực tế trong Keycloak.
+
 ### Prerequisites
 
 - Java 17+
@@ -48,19 +56,14 @@ User Management và Authentication Service sử dụng Spring Boot 3 và Keycloa
 ### Bước 1: Start Keycloak & PostgreSQL
 
 ```bash
-docker-compose -f docker-compose-keycloak.yml up -d
+docker compose up -d
 ```
 
 ### Bước 2: Cấu hình Keycloak
 
 Làm theo hướng dẫn trong file `KEYCLOAK-SETUP.md`
 
-**Quan trọng:** Copy Client Secret từ Keycloak và paste vào `application.yml`:
-
-```yaml
-keycloak:
-  client-secret: YOUR_CLIENT_SECRET_HERE
-```
+**Quan trọng:** Copy Client Secret từ Keycloak và update biến `KEYCLOAK_CLIENT_SECRET` trong `.env`.
 
 ### Bước 3: Build & Run
 
