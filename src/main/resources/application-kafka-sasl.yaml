@@ -2,7 +2,6 @@ spring:
   config:
     activate:
       on-profile: kafka-sasl
-~
   kafka:
     properties:
       security.protocol: ${KAFKA_SECURITY_PROTOCOL:SASL_PLAINTEXT}
