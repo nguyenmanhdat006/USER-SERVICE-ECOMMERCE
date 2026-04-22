@@ -2,29 +2,29 @@
 
 User Management và Authentication Service sử dụng Spring Boot 3 và Keycloak.
 
-## 📋 Tính năng
+## Tính năng
 
 ### Authentication
-- ✅ Đăng ký tài khoản
-- ✅ Đăng nhập (JWT token)
-- ✅ Refresh token
-- ✅ Logout
-- ✅ Forgot password (TODO)
-- ✅ Reset password (TODO)
+- Đăng ký tài khoản
+- Đăng nhập (JWT token)
+- Refresh token
+- Logout
+- Forgot password (TODO)
+- Reset password (TODO)
 
 ### User Management
-- ✅ Xem thông tin user
-- ✅ Cập nhật thông tin user
-- ✅ Quản lý địa chỉ (CRUD)
-- ✅ Đặt địa chỉ mặc định
-- ✅ Upload avatar (TODO)
+-  Xem thông tin user
+-  Cập nhật thông tin user
+-  Quản lý địa chỉ (CRUD)
+-  Đặt địa chỉ mặc định
+-  Upload avatar (TODO)
 
 ### Admin Features
-- ✅ Xem tất cả users
-- ✅ Xem chi tiết user
-- ✅ Xóa user
+-  Xem tất cả users
+-  Xem chi tiết user
+-  Xóa user
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Spring Boot** 3.2.2
 - **Java** 17
@@ -36,7 +36,7 @@ User Management và Authentication Service sử dụng Spring Boot 3 và Keycloa
 - **Swagger/OpenAPI** cho API documentation
 - **Lombok**
 
-## 🚀 Cài đặt & Chạy
+## Cài đặt & Chạy
 
 ### Cấu hình môi trường (.env)
 
@@ -77,7 +77,7 @@ mvn spring-boot:run
 
 Hoặc chạy trực tiếp từ IDE (IntelliJ IDEA, VS Code)
 
-## 📡 API Endpoints
+##  API Endpoints
 
 ### Authentication Endpoints (Public)
 
@@ -117,11 +117,11 @@ Hoặc chạy trực tiếp từ IDE (IntelliJ IDEA, VS Code)
 | GET | `/api/users/{id}` | Lấy user theo ID |
 | DELETE | `/api/users/{id}` | Xóa user |
 
-## 📖 API Documentation
+## API Documentation
 
 Swagger UI: http://localhost:8081/swagger-ui.html
 
-## 🧪 Testing
+## Testing
 
 ### 1. Register User
 
@@ -192,7 +192,7 @@ curl -X POST http://localhost:8081/api/users/me/addresses \
   }'
 ```
 
-## 🔐 Security
+## Security
 
 ### JWT Token Format
 
@@ -219,8 +219,7 @@ public ResponseEntity<?> adminOnlyEndpoint() {
 }
 ```
 
-## 📊 Database Schema
-
+## Database Schema
 ### users
 - id (UUID, PK)
 - keycloak_id (String, unique)
@@ -264,61 +263,3 @@ public ResponseEntity<?> adminOnlyEndpoint() {
 - newsletter_subscribed (Boolean)
 - created_at (Timestamp)
 - updated_at (Timestamp)
-
-## 🐛 Troubleshooting
-
-### Problem: Cannot connect to Keycloak
-
-**Solution:**
-- Check Keycloak is running: `docker ps | grep keycloak`
-- Check `KEYCLOAK_SERVER_URL` trong `.env`
-- Try accessing: http://localhost:8180
-
-### Problem: Client secret invalid
-
-**Solution:**
-- Go to Keycloak Admin Console
-- Select realm `ecommerce`
-- Go to Clients > `ecommerce-backend`
-- Go to Credentials tab
-- Copy Client Secret
-- Update `KEYCLOAK_CLIENT_SECRET` trong `.env`
-
-### Problem: 401 Unauthorized
-
-**Solution:**
-- Check token is valid
-- Check token hasn't expired (default 5 minutes)
-- Use refresh token to get new access token
-- Check Authorization header format: `Bearer {token}`
-
-### Problem: Database connection refused
-
-**Solution:**
-- Check PostgreSQL is running: `docker ps | grep postgres-user`
-- Check `DB_URL`, `DB_USERNAME`, `DB_PASSWORD` trong `.env`
-- Restart PostgreSQL container
-
-## 📝 TODO
-
-- [ ] Implement forgot password flow
-- [ ] Implement reset password flow
-- [ ] Add avatar upload
-- [ ] Add email verification
-- [ ] Add phone verification
-- [ ] Add Kafka event publishing (user.registered, user.updated)
-- [ ] Add unit tests
-- [ ] Add integration tests
-- [ ] Add Docker support
-- [ ] Add Kubernetes manifests
-
-## 🤝 Contributing
-
-1. Create feature branch
-2. Make changes
-3. Write tests
-4. Submit PR
-
-## 📄 License
-
-MIT License
