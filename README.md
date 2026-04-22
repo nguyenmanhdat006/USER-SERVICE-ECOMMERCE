@@ -38,6 +38,14 @@ User Management và Authentication Service sử dụng Spring Boot 3 và Keycloa
 
 ## 🚀 Cài đặt & Chạy
 
+### Cấu hình môi trường (.env)
+
+```bash
+cp .env.example .env
+```
+
+Sau đó mở `.env` và cập nhật ít nhất `KEYCLOAK_CLIENT_SECRET` theo client secret thực tế trong Keycloak.
+
 ### Prerequisites
 
 - Java 17+
@@ -48,19 +56,14 @@ User Management và Authentication Service sử dụng Spring Boot 3 và Keycloa
 ### Bước 1: Start Keycloak & PostgreSQL
 
 ```bash
-docker-compose -f docker-compose-keycloak.yml up -d
+docker compose up -d
 ```
 
 ### Bước 2: Cấu hình Keycloak
 
 Làm theo hướng dẫn trong file `KEYCLOAK-SETUP.md`
 
-**Quan trọng:** Copy Client Secret từ Keycloak và paste vào `application.yml`:
-
-```yaml
-keycloak:
-  client-secret: YOUR_CLIENT_SECRET_HERE
-```
+**Quan trọng:** Copy Client Secret từ Keycloak và update biến `KEYCLOAK_CLIENT_SECRET` trong `.env`.
 
 ### Bước 3: Build & Run
 
@@ -268,7 +271,7 @@ public ResponseEntity<?> adminOnlyEndpoint() {
 
 **Solution:**
 - Check Keycloak is running: `docker ps | grep keycloak`
-- Check Keycloak URL in `application.yml`
+- Check `KEYCLOAK_SERVER_URL` trong `.env`
 - Try accessing: http://localhost:8180
 
 ### Problem: Client secret invalid
@@ -279,7 +282,7 @@ public ResponseEntity<?> adminOnlyEndpoint() {
 - Go to Clients > `ecommerce-backend`
 - Go to Credentials tab
 - Copy Client Secret
-- Update `application.yml`
+- Update `KEYCLOAK_CLIENT_SECRET` trong `.env`
 
 ### Problem: 401 Unauthorized
 
@@ -293,7 +296,7 @@ public ResponseEntity<?> adminOnlyEndpoint() {
 
 **Solution:**
 - Check PostgreSQL is running: `docker ps | grep postgres-user`
-- Check connection settings in `application.yml`
+- Check `DB_URL`, `DB_USERNAME`, `DB_PASSWORD` trong `.env`
 - Restart PostgreSQL container
 
 ## 📝 TODO

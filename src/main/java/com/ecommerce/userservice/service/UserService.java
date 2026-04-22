@@ -5,6 +5,7 @@ import com.ecommerce.userservice.dto.request.UpdateUserRequest;
 import com.ecommerce.userservice.dto.response.UserResponse;
 import com.ecommerce.userservice.entity.User;
 import com.ecommerce.userservice.entity.UserPreference;
+import com.ecommerce.userservice.event.UserRegistrationEventProducer;
 import com.ecommerce.userservice.exception.ResourceNotFoundException;
 import com.ecommerce.userservice.mapper.UserMapper;
 import com.ecommerce.userservice.repository.UserPreferenceRepository;
@@ -32,6 +33,7 @@ public class UserService {
     private final UserPreferenceRepository userPreferenceRepository;
     private final KeycloakService keycloakService;
     private final UserMapper userMapper;
+    private final UserRegistrationEventProducer userRegistrationEventProducer;
 
     /**
      * Create new user (called after Keycloak registration)
@@ -48,6 +50,9 @@ public class UserService {
                 .user(savedUser)
                 .build();
         userPreferenceRepository.save(preference);
+
+        // Publish only after DB transaction commits successfully.
+        userRegistrationEventProducer.publishAfterCommit(savedUser);
 
         log.info("User created with ID: {}", savedUser.getId());
         return savedUser;

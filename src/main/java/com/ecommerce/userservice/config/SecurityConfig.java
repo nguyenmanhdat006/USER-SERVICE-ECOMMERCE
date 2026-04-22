@@ -1,5 +1,6 @@
 package com.ecommerce.userservice.config;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -17,6 +18,7 @@ import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -26,6 +28,17 @@ import java.util.stream.Stream;
 @EnableWebSecurity
 @EnableMethodSecurity
 public class SecurityConfig {
+
+    private final String keycloakClientId;
+    private final List<String> corsAllowedOrigins;
+
+    public SecurityConfig(
+            @Value("${app.security.keycloak-client-id:ecommerce-backend}") String keycloakClientId,
+            @Value("#{'${app.security.cors-allowed-origins:http://localhost:3000,http://localhost:5173,http://localhost:8080}'.split(',')}") List<String> corsAllowedOrigins
+    ) {
+        this.keycloakClientId = keycloakClientId;
+        this.corsAllowedOrigins = corsAllowedOrigins;
+    }
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
@@ -72,21 +85,26 @@ public class SecurityConfig {
         converter.setJwtGrantedAuthoritiesConverter(jwt -> {
             // Get authorities from realm_access.roles
             Map<String, Object> realmAccess = jwt.getClaim("realm_access");
-            Collection<GrantedAuthority> realmRoles = ((List<String>) realmAccess.get("roles"))
-                    .stream()
-                    .map(role -> new SimpleGrantedAuthority("ROLE_" + role))
-                    .collect(Collectors.toList());
+            Collection<GrantedAuthority> realmRoles = Collections.emptyList();
+            if (realmAccess != null && realmAccess.get("roles") instanceof List<?> roles) {
+                realmRoles = roles.stream()
+                        .map(String::valueOf)
+                        .map(role -> new SimpleGrantedAuthority("ROLE_" + role))
+                        .collect(Collectors.toList());
+            }
 
             // Get authorities from resource_access.{client-id}.roles
             Map<String, Object> resourceAccess = jwt.getClaim("resource_access");
             Collection<GrantedAuthority> resourceRoles = List.of();
 
-            if (resourceAccess != null && resourceAccess.containsKey("ecommerce-backend")) {
-                Map<String, Object> clientAccess = (Map<String, Object>) resourceAccess.get("ecommerce-backend");
-                resourceRoles = ((List<String>) clientAccess.get("roles"))
-                        .stream()
-                        .map(role -> new SimpleGrantedAuthority("ROLE_" + role))
-                        .collect(Collectors.toList());
+            if (resourceAccess != null && resourceAccess.containsKey(keycloakClientId)) {
+                Map<String, Object> clientAccess = (Map<String, Object>) resourceAccess.get(keycloakClientId);
+                if (clientAccess != null && clientAccess.get("roles") instanceof List<?> roles) {
+                    resourceRoles = roles.stream()
+                            .map(String::valueOf)
+                            .map(role -> new SimpleGrantedAuthority("ROLE_" + role))
+                            .collect(Collectors.toList());
+                }
             }
 
             // Get standard scope authorities
@@ -105,11 +123,10 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of(
-                "http://localhost:3000",
-                "http://localhost:5173",
-                "http://localhost:8080"
-        ));
+        configuration.setAllowedOrigins(corsAllowedOrigins.stream()
+                .map(String::trim)
+                .filter(origin -> !origin.isEmpty())
+                .toList());
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("*"));
         configuration.setAllowCredentials(true);
