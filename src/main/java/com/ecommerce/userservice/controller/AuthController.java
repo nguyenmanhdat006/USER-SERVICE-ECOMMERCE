@@ -5,10 +5,7 @@ import com.ecommerce.userservice.dto.request.RegisterRequest;
 import com.ecommerce.userservice.dto.response.ApiResponse;
 import com.ecommerce.userservice.dto.response.AuthResponse;
 import com.ecommerce.userservice.dto.response.UserResponse;
-import com.ecommerce.userservice.entity.User;
-import com.ecommerce.userservice.mapper.UserMapper;
-import com.ecommerce.userservice.service.KeycloakService;
-import com.ecommerce.userservice.service.UserService;
+import com.ecommerce.userservice.service.AuthService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
@@ -27,50 +24,33 @@ import java.util.Map;
 @Tag(name = "Authentication", description = "Authentication and Registration APIs")
 public class AuthController {
 
-    private final KeycloakService keycloakService;
-    private final UserService userService;
-    private final UserMapper userMapper;
+    private final AuthService authService;
 
     @PostMapping("/register")
     @Operation(summary = "Register new user", description = "Create a new user account")
     public ResponseEntity<ApiResponse<UserResponse>> register(@Valid @RequestBody RegisterRequest request) {
         log.info("Registration request received for email: {}", request.getEmail());
-
-        // Check if user already exists
-        if (userService.existsByEmail(request.getEmail())) {
+        try {
+            UserResponse response = authService.register(request);
             return ResponseEntity
-                    .status(HttpStatus.CONFLICT)
-                    .body(ApiResponse.error("User with this email already exists"));
+                    .status(HttpStatus.CREATED)
+                    .body(ApiResponse.success("User registered successfully", response));
+        } catch (Exception e) {
+            // Preserve previous behavior: return 409 for existing user
+            if (e instanceof com.ecommerce.userservice.exception.UserAlreadyExistsException) {
+                return ResponseEntity
+                        .status(HttpStatus.CONFLICT)
+                        .body(ApiResponse.error("User with this email already exists"));
+            }
+            throw e;
         }
-
-        // Create user in Keycloak
-        String keycloakId = keycloakService.createUser(request);
-
-        // Create user in local database
-        User user = userService.createUser(request, keycloakId);
-
-        UserResponse response = userMapper.toResponse(user);
-
-        return ResponseEntity
-                .status(HttpStatus.CREATED)
-                .body(ApiResponse.success("User registered successfully", response));
     }
 
     @PostMapping("/login")
     @Operation(summary = "Login", description = "Authenticate user and get access token")
     public ResponseEntity<ApiResponse<AuthResponse>> login(@Valid @RequestBody LoginRequest request) {
         log.info("Login request received for email: {}", request.getEmail());
-
-        // Authenticate with Keycloak
-        AuthResponse authResponse = keycloakService.login(request);
-
-        // Get user info
-        User user = userService.getUserByEmail(request.getEmail());
-        UserResponse userResponse = userMapper.toResponse(user);
-
-        // Add user info to auth response
-        authResponse.setUser(userResponse);
-
+        AuthResponse authResponse = authService.login(request);
         return ResponseEntity.ok(ApiResponse.success(authResponse));
     }
 
@@ -85,7 +65,7 @@ public class AuthController {
                     .body(ApiResponse.error("Refresh token is required"));
         }
 
-        AuthResponse authResponse = keycloakService.refreshToken(refreshToken);
+        AuthResponse authResponse = authService.refreshToken(refreshToken);
 
         return ResponseEntity.ok(ApiResponse.success(authResponse));
     }
@@ -94,10 +74,7 @@ public class AuthController {
     @Operation(summary = "Logout", description = "Logout user and invalidate tokens")
     public ResponseEntity<ApiResponse<Void>> logout(@RequestBody Map<String, String> request) {
         String refreshToken = request.get("refreshToken");
-
-        if (refreshToken != null && !refreshToken.isEmpty()) {
-            keycloakService.logout(refreshToken);
-        }
+        authService.logout(refreshToken);
 
         return ResponseEntity.ok(ApiResponse.success("Logged out successfully", null));
     }
@@ -106,12 +83,10 @@ public class AuthController {
     @Operation(summary = "Forgot password", description = "Send password reset email")
     public ResponseEntity<ApiResponse<Void>> forgotPassword(@RequestBody Map<String, String> request) {
         String email = request.get("email");
-
-        // TODO: Implement password reset email logic
-        // This requires Keycloak email configuration
+        authService.forgotPassword(email);
 
         return ResponseEntity.ok(
-                ApiResponse.success("If the email exists, a password reset link has been sent", null)
+            ApiResponse.success("If the email exists, a password reset link has been sent", null)
         );
     }
 
@@ -120,12 +95,10 @@ public class AuthController {
     public ResponseEntity<ApiResponse<Void>> resetPassword(@RequestBody Map<String, String> request) {
         String token = request.get("token");
         String newPassword = request.get("newPassword");
-
-        // TODO: Implement password reset logic
-        // This requires Keycloak API integration
+        authService.resetPassword(token, newPassword);
 
         return ResponseEntity.ok(
-                ApiResponse.success("Password reset successfully", null)
+            ApiResponse.success("Password reset successfully", null)
         );
     }
 }

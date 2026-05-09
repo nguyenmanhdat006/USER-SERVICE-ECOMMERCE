@@ -35,9 +35,6 @@ public class UserService {
     private final UserMapper userMapper;
     private final UserRegistrationEventProducer userRegistrationEventProducer;
 
-    /**
-     * Create new user (called after Keycloak registration)
-     */
     @Transactional
     public User createUser(RegisterRequest request, String keycloakId) {
         User user = userMapper.toEntity(request);
