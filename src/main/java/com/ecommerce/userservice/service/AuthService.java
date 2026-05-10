@@ -111,12 +111,15 @@ public class AuthService {
     }
 
     public void forgotPassword(String email) {
-        // TODO: Implement password reset email logic via Keycloak
-        log.info("Forgot password requested for email: {}", email);
-    }
+        if (email == null || email.isBlank()) {
+            return;
+        }
 
-    public void resetPassword(String token, String newPassword) {
-        // TODO: Implement password reset logic via Keycloak API
-        log.info("Reset password requested with token: {}", token);
+        UserRepresentation user = keycloakService.findUserByEmail(email.trim());
+        if (user == null) {
+            return;
+        }
+
+        keycloakService.sendResetPasswordEmail(user.getId());
     }
 }

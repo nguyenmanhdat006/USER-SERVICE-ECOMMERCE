@@ -45,6 +45,9 @@ public class KeycloakService {
     @Value("${keycloak.client-secret}")
     private String clientSecret;
 
+    @Value("${keycloak.forgot-password.redirect-uri}")
+    private String forgotPasswordRedirectUri;
+
     private final RestTemplate restTemplate = new RestTemplate();
 
     public String createUser(RegisterRequest request) {
@@ -243,6 +246,20 @@ public class KeycloakService {
         } catch (Exception e) {
             log.error("Error searching Keycloak user by email={}", email, e);
             throw new RuntimeException("Failed to find user by email: " + e.getMessage());
+        }
+    }
+
+    public void sendResetPasswordEmail(String userId) {
+        List<String> actions = List.of("UPDATE_PASSWORD");
+        try {
+            keycloakAdminClient.realm(realm)
+                    .users()
+                    .get(userId)
+                    .executeActionsEmail(clientId, forgotPasswordRedirectUri, actions);
+            log.info("Requested Keycloak execute-actions email (UPDATE_PASSWORD) for userId={}", userId);
+        } catch (Exception e) {
+            log.error("Failed to send reset-password email via Keycloak for userId={}", userId, e);
+            throw new RuntimeException("Failed to send reset password email: " + e.getMessage());
         }
     }
 

@@ -1,0 +1,4861 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "UserServiceApplication.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/UserServiceApplication.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_userserviceapplication_java",
+      "community": 11,
+      "norm_label": "userserviceapplication.java"
+    },
+    {
+      "label": "UserServiceApplication",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/UserServiceApplication.java",
+      "source_location": "L11",
+      "id": "userservice_userserviceapplication_userserviceapplication",
+      "community": 11,
+      "norm_label": "userserviceapplication"
+    },
+    {
+      "label": ".main()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/UserServiceApplication.java",
+      "source_location": "L28",
+      "id": "userservice_userserviceapplication_userserviceapplication_main",
+      "community": 11,
+      "norm_label": ".main()"
+    },
+    {
+      "label": "KafkaProducerProperties.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/config/KafkaProducerProperties.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_config_kafkaproducerproperties_java",
+      "community": 13,
+      "norm_label": "kafkaproducerproperties.java"
+    },
+    {
+      "label": "KafkaProducerProperties",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/config/KafkaProducerProperties.java",
+      "source_location": "L7",
+      "id": "config_kafkaproducerproperties_kafkaproducerproperties",
+      "community": 13,
+      "norm_label": "kafkaproducerproperties"
+    },
+    {
+      "label": "KeycloakConfig.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/config/KeycloakConfig.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_config_keycloakconfig_java",
+      "community": 10,
+      "norm_label": "keycloakconfig.java"
+    },
+    {
+      "label": "KeycloakConfig",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/config/KeycloakConfig.java",
+      "source_location": "L12",
+      "id": "config_keycloakconfig_keycloakconfig",
+      "community": 10,
+      "norm_label": "keycloakconfig"
+    },
+    {
+      "label": "Admin",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/config/KeycloakConfig.java",
+      "source_location": "L23",
+      "id": "config_keycloakconfig_admin",
+      "community": 10,
+      "norm_label": "admin"
+    },
+    {
+      "label": ".keycloakAdminClient()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/config/KeycloakConfig.java",
+      "source_location": "L29",
+      "id": "config_keycloakconfig_keycloakconfig_keycloakadminclient",
+      "community": 10,
+      "norm_label": ".keycloakadminclient()"
+    },
+    {
+      "label": ".keycloakClient()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/config/KeycloakConfig.java",
+      "source_location": "L44",
+      "id": "config_keycloakconfig_keycloakconfig_keycloakclient",
+      "community": 10,
+      "norm_label": ".keycloakclient()"
+    },
+    {
+      "label": "SecurityConfig.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/config/SecurityConfig.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_config_securityconfig_java",
+      "community": 9,
+      "norm_label": "securityconfig.java"
+    },
+    {
+      "label": "SecurityConfig",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/config/SecurityConfig.java",
+      "source_location": "L27",
+      "id": "config_securityconfig_securityconfig",
+      "community": 9,
+      "norm_label": "securityconfig"
+    },
+    {
+      "label": ".SecurityConfig()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/config/SecurityConfig.java",
+      "source_location": "L35",
+      "id": "config_securityconfig_securityconfig_securityconfig",
+      "community": 9,
+      "norm_label": ".securityconfig()"
+    },
+    {
+      "label": ".securityFilterChain()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/config/SecurityConfig.java",
+      "source_location": "L43",
+      "id": "config_securityconfig_securityconfig_securityfilterchain",
+      "community": 9,
+      "norm_label": ".securityfilterchain()"
+    },
+    {
+      "label": ".jwtAuthenticationConverter()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/config/SecurityConfig.java",
+      "source_location": "L82",
+      "id": "config_securityconfig_securityconfig_jwtauthenticationconverter",
+      "community": 9,
+      "norm_label": ".jwtauthenticationconverter()"
+    },
+    {
+      "label": ".corsConfigurationSource()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/config/SecurityConfig.java",
+      "source_location": "L123",
+      "id": "config_securityconfig_securityconfig_corsconfigurationsource",
+      "community": 9,
+      "norm_label": ".corsconfigurationsource()"
+    },
+    {
+      "label": "AddressController.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AddressController.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_controller_addresscontroller_java",
+      "community": 1,
+      "norm_label": "addresscontroller.java"
+    },
+    {
+      "label": "AddressController",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AddressController.java",
+      "source_location": "L20",
+      "id": "controller_addresscontroller_addresscontroller",
+      "community": 1,
+      "norm_label": "addresscontroller"
+    },
+    {
+      "label": ".getAllAddresses()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AddressController.java",
+      "source_location": "L30",
+      "id": "controller_addresscontroller_addresscontroller_getalladdresses",
+      "community": 1,
+      "norm_label": ".getalladdresses()"
+    },
+    {
+      "label": ".getAddressById()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AddressController.java",
+      "source_location": "L37",
+      "id": "controller_addresscontroller_addresscontroller_getaddressbyid",
+      "community": 1,
+      "norm_label": ".getaddressbyid()"
+    },
+    {
+      "label": ".getDefaultAddress()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AddressController.java",
+      "source_location": "L44",
+      "id": "controller_addresscontroller_addresscontroller_getdefaultaddress",
+      "community": 1,
+      "norm_label": ".getdefaultaddress()"
+    },
+    {
+      "label": ".createAddress()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AddressController.java",
+      "source_location": "L51",
+      "id": "controller_addresscontroller_addresscontroller_createaddress",
+      "community": 1,
+      "norm_label": ".createaddress()"
+    },
+    {
+      "label": ".updateAddress()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AddressController.java",
+      "source_location": "L62",
+      "id": "controller_addresscontroller_addresscontroller_updateaddress",
+      "community": 1,
+      "norm_label": ".updateaddress()"
+    },
+    {
+      "label": ".setDefaultAddress()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AddressController.java",
+      "source_location": "L72",
+      "id": "controller_addresscontroller_addresscontroller_setdefaultaddress",
+      "community": 1,
+      "norm_label": ".setdefaultaddress()"
+    },
+    {
+      "label": ".deleteAddress()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AddressController.java",
+      "source_location": "L80",
+      "id": "controller_addresscontroller_addresscontroller_deleteaddress",
+      "community": 1,
+      "norm_label": ".deleteaddress()"
+    },
+    {
+      "label": "AuthController.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AuthController.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_controller_authcontroller_java",
+      "community": 1,
+      "norm_label": "authcontroller.java"
+    },
+    {
+      "label": "AuthController",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AuthController.java",
+      "source_location": "L21",
+      "id": "controller_authcontroller_authcontroller",
+      "community": 1,
+      "norm_label": "authcontroller"
+    },
+    {
+      "label": ".register()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AuthController.java",
+      "source_location": "L30",
+      "id": "controller_authcontroller_authcontroller_register",
+      "community": 1,
+      "norm_label": ".register()"
+    },
+    {
+      "label": ".login()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AuthController.java",
+      "source_location": "L50",
+      "id": "controller_authcontroller_authcontroller_login",
+      "community": 1,
+      "norm_label": ".login()"
+    },
+    {
+      "label": ".socialLogin()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AuthController.java",
+      "source_location": "L58",
+      "id": "controller_authcontroller_authcontroller_sociallogin",
+      "community": 1,
+      "norm_label": ".sociallogin()"
+    },
+    {
+      "label": ".refreshToken()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AuthController.java",
+      "source_location": "L71",
+      "id": "controller_authcontroller_authcontroller_refreshtoken",
+      "community": 1,
+      "norm_label": ".refreshtoken()"
+    },
+    {
+      "label": ".logout()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AuthController.java",
+      "source_location": "L87",
+      "id": "controller_authcontroller_authcontroller_logout",
+      "community": 1,
+      "norm_label": ".logout()"
+    },
+    {
+      "label": ".forgotPassword()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AuthController.java",
+      "source_location": "L96",
+      "id": "controller_authcontroller_authcontroller_forgotpassword",
+      "community": 1,
+      "norm_label": ".forgotpassword()"
+    },
+    {
+      "label": "UserController.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/UserController.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_controller_usercontroller_java",
+      "community": 1,
+      "norm_label": "usercontroller.java"
+    },
+    {
+      "label": "UserController",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/UserController.java",
+      "source_location": "L20",
+      "id": "controller_usercontroller_usercontroller",
+      "community": 1,
+      "norm_label": "usercontroller"
+    },
+    {
+      "label": ".getCurrentUser()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/UserController.java",
+      "source_location": "L30",
+      "id": "controller_usercontroller_usercontroller_getcurrentuser",
+      "community": 1,
+      "norm_label": ".getcurrentuser()"
+    },
+    {
+      "label": ".updateCurrentUser()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/UserController.java",
+      "source_location": "L37",
+      "id": "controller_usercontroller_usercontroller_updatecurrentuser",
+      "community": 1,
+      "norm_label": ".updatecurrentuser()"
+    },
+    {
+      "label": ".getUserById()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/UserController.java",
+      "source_location": "L46",
+      "id": "controller_usercontroller_usercontroller_getuserbyid",
+      "community": 1,
+      "norm_label": ".getuserbyid()"
+    },
+    {
+      "label": ".getAllUsers()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/UserController.java",
+      "source_location": "L54",
+      "id": "controller_usercontroller_usercontroller_getallusers",
+      "community": 1,
+      "norm_label": ".getallusers()"
+    },
+    {
+      "label": ".deleteUser()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/UserController.java",
+      "source_location": "L62",
+      "id": "controller_usercontroller_usercontroller_deleteuser",
+      "community": 1,
+      "norm_label": ".deleteuser()"
+    },
+    {
+      "label": "UserRegisteredEvent.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/event/UserRegisteredEvent.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_dto_event_userregisteredevent_java",
+      "community": 14,
+      "norm_label": "userregisteredevent.java"
+    },
+    {
+      "label": "UserRegisteredEvent",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/event/UserRegisteredEvent.java",
+      "source_location": "L10",
+      "id": "event_userregisteredevent_userregisteredevent",
+      "community": 14,
+      "norm_label": "userregisteredevent"
+    },
+    {
+      "label": "CreateAddressRequest.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/request/CreateAddressRequest.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_dto_request_createaddressrequest_java",
+      "community": 15,
+      "norm_label": "createaddressrequest.java"
+    },
+    {
+      "label": "CreateAddressRequest",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/request/CreateAddressRequest.java",
+      "source_location": "L12",
+      "id": "request_createaddressrequest_createaddressrequest",
+      "community": 15,
+      "norm_label": "createaddressrequest"
+    },
+    {
+      "label": "LoginRequest.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/request/LoginRequest.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_dto_request_loginrequest_java",
+      "community": 16,
+      "norm_label": "loginrequest.java"
+    },
+    {
+      "label": "LoginRequest",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/request/LoginRequest.java",
+      "source_location": "L10",
+      "id": "request_loginrequest_loginrequest",
+      "community": 16,
+      "norm_label": "loginrequest"
+    },
+    {
+      "label": "RegisterRequest.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/request/RegisterRequest.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_dto_request_registerrequest_java",
+      "community": 17,
+      "norm_label": "registerrequest.java"
+    },
+    {
+      "label": "RegisterRequest",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/request/RegisterRequest.java",
+      "source_location": "L12",
+      "id": "request_registerrequest_registerrequest",
+      "community": 17,
+      "norm_label": "registerrequest"
+    },
+    {
+      "label": "UpdateUserRequest.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/request/UpdateUserRequest.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_dto_request_updateuserrequest_java",
+      "community": 18,
+      "norm_label": "updateuserrequest.java"
+    },
+    {
+      "label": "UpdateUserRequest",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/request/UpdateUserRequest.java",
+      "source_location": "L13",
+      "id": "request_updateuserrequest_updateuserrequest",
+      "community": 18,
+      "norm_label": "updateuserrequest"
+    },
+    {
+      "label": "OAuthRequest.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/request/OAuthRequest.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_dto_request_oauthrequest_java",
+      "community": 19,
+      "norm_label": "oauthrequest.java"
+    },
+    {
+      "label": "OAuthRequest",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/request/OAuthRequest.java",
+      "source_location": "L6",
+      "id": "request_oauthrequest_oauthrequest",
+      "community": 19,
+      "norm_label": "oauthrequest"
+    },
+    {
+      "label": "AddressResponse.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/response/AddressResponse.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_dto_response_addressresponse_java",
+      "community": 20,
+      "norm_label": "addressresponse.java"
+    },
+    {
+      "label": "AddressResponse",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/response/AddressResponse.java",
+      "source_location": "L12",
+      "id": "response_addressresponse_addressresponse",
+      "community": 20,
+      "norm_label": "addressresponse"
+    },
+    {
+      "label": "ApiResponse.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/response/ApiResponse.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_dto_response_apiresponse_java",
+      "community": 1,
+      "norm_label": "apiresponse.java"
+    },
+    {
+      "label": "ApiResponse",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/response/ApiResponse.java",
+      "source_location": "L10",
+      "id": "response_apiresponse_apiresponse",
+      "community": 1,
+      "norm_label": "apiresponse"
+    },
+    {
+      "label": ".success()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/response/ApiResponse.java",
+      "source_location": "L22",
+      "id": "response_apiresponse_apiresponse_success",
+      "community": 1,
+      "norm_label": ".success()"
+    },
+    {
+      "label": ".error()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/response/ApiResponse.java",
+      "source_location": "L37",
+      "id": "response_apiresponse_apiresponse_error",
+      "community": 0,
+      "norm_label": ".error()"
+    },
+    {
+      "label": "AuthResponse.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/response/AuthResponse.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_dto_response_authresponse_java",
+      "community": 21,
+      "norm_label": "authresponse.java"
+    },
+    {
+      "label": "AuthResponse",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/response/AuthResponse.java",
+      "source_location": "L9",
+      "id": "response_authresponse_authresponse",
+      "community": 21,
+      "norm_label": "authresponse"
+    },
+    {
+      "label": "UserResponse.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/response/UserResponse.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_dto_response_userresponse_java",
+      "community": 22,
+      "norm_label": "userresponse.java"
+    },
+    {
+      "label": "UserResponse",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/response/UserResponse.java",
+      "source_location": "L15",
+      "id": "response_userresponse_userresponse",
+      "community": 22,
+      "norm_label": "userresponse"
+    },
+    {
+      "label": "Address.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/entity/Address.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_entity_address_java",
+      "community": 23,
+      "norm_label": "address.java"
+    },
+    {
+      "label": "Address",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/entity/Address.java",
+      "source_location": "L14",
+      "id": "entity_address_address",
+      "community": 23,
+      "norm_label": "address"
+    },
+    {
+      "label": "User.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/entity/User.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_entity_user_java",
+      "community": 6,
+      "norm_label": "user.java"
+    },
+    {
+      "label": "User",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/entity/User.java",
+      "source_location": "L17",
+      "id": "entity_user_user",
+      "community": 6,
+      "norm_label": "user"
+    },
+    {
+      "label": ".addAddress()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/entity/User.java",
+      "source_location": "L83",
+      "id": "entity_user_user_addaddress",
+      "community": 6,
+      "norm_label": ".addaddress()"
+    },
+    {
+      "label": ".removeAddress()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/entity/User.java",
+      "source_location": "L88",
+      "id": "entity_user_user_removeaddress",
+      "community": 6,
+      "norm_label": ".removeaddress()"
+    },
+    {
+      "label": "UserPreference.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/entity/UserPreference.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_entity_userpreference_java",
+      "community": 24,
+      "norm_label": "userpreference.java"
+    },
+    {
+      "label": "UserPreference",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/entity/UserPreference.java",
+      "source_location": "L14",
+      "id": "entity_userpreference_userpreference",
+      "community": 24,
+      "norm_label": "userpreference"
+    },
+    {
+      "label": "UserRegistrationEventProducer.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/event/UserRegistrationEventProducer.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_event_userregistrationeventproducer_java",
+      "community": 6,
+      "norm_label": "userregistrationeventproducer.java"
+    },
+    {
+      "label": "UserRegistrationEventProducer",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/event/UserRegistrationEventProducer.java",
+      "source_location": "L16",
+      "id": "event_userregistrationeventproducer_userregistrationeventproducer",
+      "community": 6,
+      "norm_label": "userregistrationeventproducer"
+    },
+    {
+      "label": ".publishAfterCommit()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/event/UserRegistrationEventProducer.java",
+      "source_location": "L24",
+      "id": "event_userregistrationeventproducer_userregistrationeventproducer_publishaftercommit",
+      "community": 6,
+      "norm_label": ".publishaftercommit()"
+    },
+    {
+      "label": ".publish()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/event/UserRegistrationEventProducer.java",
+      "source_location": "L38",
+      "id": "event_userregistrationeventproducer_userregistrationeventproducer_publish",
+      "community": 6,
+      "norm_label": ".publish()"
+    },
+    {
+      "label": "AuthenticationException.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/AuthenticationException.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_exception_authenticationexception_java",
+      "community": 7,
+      "norm_label": "authenticationexception.java"
+    },
+    {
+      "label": "AuthenticationException",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/AuthenticationException.java",
+      "source_location": "L3",
+      "id": "exception_authenticationexception_authenticationexception",
+      "community": 7,
+      "norm_label": "authenticationexception"
+    },
+    {
+      "label": "RuntimeException",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "runtimeexception",
+      "community": 7,
+      "norm_label": "runtimeexception"
+    },
+    {
+      "label": ".AuthenticationException()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/AuthenticationException.java",
+      "source_location": "L5",
+      "id": "exception_authenticationexception_authenticationexception_authenticationexception",
+      "community": 7,
+      "norm_label": ".authenticationexception()"
+    },
+    {
+      "label": "GlobalExceptionHandler.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/GlobalExceptionHandler.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_exception_globalexceptionhandler_java",
+      "community": 0,
+      "norm_label": "globalexceptionhandler.java"
+    },
+    {
+      "label": "GlobalExceptionHandler",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/GlobalExceptionHandler.java",
+      "source_location": "L17",
+      "id": "exception_globalexceptionhandler_globalexceptionhandler",
+      "community": 0,
+      "norm_label": "globalexceptionhandler"
+    },
+    {
+      "label": ".handleResourceNotFound()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/GlobalExceptionHandler.java",
+      "source_location": "L21",
+      "id": "exception_globalexceptionhandler_globalexceptionhandler_handleresourcenotfound",
+      "community": 0,
+      "norm_label": ".handleresourcenotfound()"
+    },
+    {
+      "label": ".handleUserAlreadyExists()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/GlobalExceptionHandler.java",
+      "source_location": "L29",
+      "id": "exception_globalexceptionhandler_globalexceptionhandler_handleuseralreadyexists",
+      "community": 0,
+      "norm_label": ".handleuseralreadyexists()"
+    },
+    {
+      "label": ".handleAuthenticationException()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/GlobalExceptionHandler.java",
+      "source_location": "L37",
+      "id": "exception_globalexceptionhandler_globalexceptionhandler_handleauthenticationexception",
+      "community": 0,
+      "norm_label": ".handleauthenticationexception()"
+    },
+    {
+      "label": ".handleBadCredentials()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/GlobalExceptionHandler.java",
+      "source_location": "L45",
+      "id": "exception_globalexceptionhandler_globalexceptionhandler_handlebadcredentials",
+      "community": 0,
+      "norm_label": ".handlebadcredentials()"
+    },
+    {
+      "label": ".handleAccessDenied()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/GlobalExceptionHandler.java",
+      "source_location": "L53",
+      "id": "exception_globalexceptionhandler_globalexceptionhandler_handleaccessdenied",
+      "community": 0,
+      "norm_label": ".handleaccessdenied()"
+    },
+    {
+      "label": ".handleValidationExceptions()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/GlobalExceptionHandler.java",
+      "source_location": "L61",
+      "id": "exception_globalexceptionhandler_globalexceptionhandler_handlevalidationexceptions",
+      "community": 0,
+      "norm_label": ".handlevalidationexceptions()"
+    },
+    {
+      "label": ".handleGenericException()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/GlobalExceptionHandler.java",
+      "source_location": "L81",
+      "id": "exception_globalexceptionhandler_globalexceptionhandler_handlegenericexception",
+      "community": 0,
+      "norm_label": ".handlegenericexception()"
+    },
+    {
+      "label": "ResourceNotFoundException.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/ResourceNotFoundException.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_exception_resourcenotfoundexception_java",
+      "community": 7,
+      "norm_label": "resourcenotfoundexception.java"
+    },
+    {
+      "label": "ResourceNotFoundException",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/ResourceNotFoundException.java",
+      "source_location": "L3",
+      "id": "exception_resourcenotfoundexception_resourcenotfoundexception",
+      "community": 7,
+      "norm_label": "resourcenotfoundexception"
+    },
+    {
+      "label": ".ResourceNotFoundException()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/ResourceNotFoundException.java",
+      "source_location": "L5",
+      "id": "exception_resourcenotfoundexception_resourcenotfoundexception_resourcenotfoundexception",
+      "community": 7,
+      "norm_label": ".resourcenotfoundexception()"
+    },
+    {
+      "label": "UserAlreadyExistsException.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/UserAlreadyExistsException.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_exception_useralreadyexistsexception_java",
+      "community": 7,
+      "norm_label": "useralreadyexistsexception.java"
+    },
+    {
+      "label": "UserAlreadyExistsException",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/UserAlreadyExistsException.java",
+      "source_location": "L3",
+      "id": "exception_useralreadyexistsexception_useralreadyexistsexception",
+      "community": 7,
+      "norm_label": "useralreadyexistsexception"
+    },
+    {
+      "label": ".UserAlreadyExistsException()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/UserAlreadyExistsException.java",
+      "source_location": "L5",
+      "id": "exception_useralreadyexistsexception_useralreadyexistsexception_useralreadyexistsexception",
+      "community": 7,
+      "norm_label": ".useralreadyexistsexception()"
+    },
+    {
+      "label": "AddressMapper.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/mapper/AddressMapper.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_mapper_addressmapper_java",
+      "community": 0,
+      "norm_label": "addressmapper.java"
+    },
+    {
+      "label": "AddressMapper",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/mapper/AddressMapper.java",
+      "source_location": "L7",
+      "id": "mapper_addressmapper_addressmapper",
+      "community": 0,
+      "norm_label": "addressmapper"
+    },
+    {
+      "label": ".toAddress()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/mapper/AddressMapper.java",
+      "source_location": "L9",
+      "id": "mapper_addressmapper_addressmapper_toaddress",
+      "community": 0,
+      "norm_label": ".toaddress()"
+    },
+    {
+      "label": ".toAddressResponse()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/mapper/AddressMapper.java",
+      "source_location": "L10",
+      "id": "mapper_addressmapper_addressmapper_toaddressresponse",
+      "community": 0,
+      "norm_label": ".toaddressresponse()"
+    },
+    {
+      "label": ".update()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/mapper/AddressMapper.java",
+      "source_location": "L11",
+      "id": "mapper_addressmapper_addressmapper_update",
+      "community": 0,
+      "norm_label": ".update()"
+    },
+    {
+      "label": "UserMapper.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/mapper/UserMapper.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_mapper_usermapper_java",
+      "community": 2,
+      "norm_label": "usermapper.java"
+    },
+    {
+      "label": "UserMapper",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/mapper/UserMapper.java",
+      "source_location": "L14",
+      "id": "mapper_usermapper_usermapper",
+      "community": 2,
+      "norm_label": "usermapper"
+    },
+    {
+      "label": ".toEntity()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/mapper/UserMapper.java",
+      "source_location": "L21",
+      "id": "mapper_usermapper_usermapper_toentity",
+      "community": 6,
+      "norm_label": ".toentity()"
+    },
+    {
+      "label": ".toResponse()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/mapper/UserMapper.java",
+      "source_location": "L32",
+      "id": "mapper_usermapper_usermapper_toresponse",
+      "community": 2,
+      "norm_label": ".toresponse()"
+    },
+    {
+      "label": ".toResponseList()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/mapper/UserMapper.java",
+      "source_location": "L35",
+      "id": "mapper_usermapper_usermapper_toresponselist",
+      "community": 2,
+      "norm_label": ".toresponselist()"
+    },
+    {
+      "label": ".updateEntityFromRequest()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/mapper/UserMapper.java",
+      "source_location": "L37",
+      "id": "mapper_usermapper_usermapper_updateentityfromrequest",
+      "community": 2,
+      "norm_label": ".updateentityfromrequest()"
+    },
+    {
+      "label": ".toAddressEntity()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/mapper/UserMapper.java",
+      "source_location": "L40",
+      "id": "mapper_usermapper_usermapper_toaddressentity",
+      "community": 2,
+      "norm_label": ".toaddressentity()"
+    },
+    {
+      "label": ".toAddressResponse()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/mapper/UserMapper.java",
+      "source_location": "L46",
+      "id": "mapper_usermapper_usermapper_toaddressresponse",
+      "community": 2,
+      "norm_label": ".toaddressresponse()"
+    },
+    {
+      "label": ".toAddressResponseList()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/mapper/UserMapper.java",
+      "source_location": "L48",
+      "id": "mapper_usermapper_usermapper_toaddressresponselist",
+      "community": 4,
+      "norm_label": ".toaddressresponselist()"
+    },
+    {
+      "label": "AddressRepository.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/repository/AddressRepository.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_repository_addressrepository_java",
+      "community": 4,
+      "norm_label": "addressrepository.java"
+    },
+    {
+      "label": "AddressRepository",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/repository/AddressRepository.java",
+      "source_location": "L15",
+      "id": "repository_addressrepository_addressrepository",
+      "community": 4,
+      "norm_label": "addressrepository"
+    },
+    {
+      "label": ".findByUser()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/repository/AddressRepository.java",
+      "source_location": "L18",
+      "id": "repository_addressrepository_addressrepository_findbyuser",
+      "community": 4,
+      "norm_label": ".findbyuser()"
+    },
+    {
+      "label": ".findByUserOrderByIsDefaultDescCreatedAtDesc()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/repository/AddressRepository.java",
+      "source_location": "L20",
+      "id": "repository_addressrepository_addressrepository_findbyuserorderbyisdefaultdesccreatedatdesc",
+      "community": 4,
+      "norm_label": ".findbyuserorderbyisdefaultdesccreatedatdesc()"
+    },
+    {
+      "label": ".findByUserAndIsDefaultTrue()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/repository/AddressRepository.java",
+      "source_location": "L22",
+      "id": "repository_addressrepository_addressrepository_findbyuserandisdefaulttrue",
+      "community": 4,
+      "norm_label": ".findbyuserandisdefaulttrue()"
+    },
+    {
+      "label": ".unsetDefaultForUser()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/repository/AddressRepository.java",
+      "source_location": "L24",
+      "id": "repository_addressrepository_addressrepository_unsetdefaultforuser",
+      "community": 4,
+      "norm_label": ".unsetdefaultforuser()"
+    },
+    {
+      "label": "UserPreferenceRepository.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/repository/UserPreferenceRepository.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_repository_userpreferencerepository_java",
+      "community": 12,
+      "norm_label": "userpreferencerepository.java"
+    },
+    {
+      "label": "UserPreferenceRepository",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/repository/UserPreferenceRepository.java",
+      "source_location": "L11",
+      "id": "repository_userpreferencerepository_userpreferencerepository",
+      "community": 12,
+      "norm_label": "userpreferencerepository"
+    },
+    {
+      "label": ".findByUser()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/repository/UserPreferenceRepository.java",
+      "source_location": "L14",
+      "id": "repository_userpreferencerepository_userpreferencerepository_findbyuser",
+      "community": 12,
+      "norm_label": ".findbyuser()"
+    },
+    {
+      "label": "UserRepository.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/repository/UserRepository.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_repository_userrepository_java",
+      "community": 2,
+      "norm_label": "userrepository.java"
+    },
+    {
+      "label": "UserRepository",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/repository/UserRepository.java",
+      "source_location": "L10",
+      "id": "repository_userrepository_userrepository",
+      "community": 2,
+      "norm_label": "userrepository"
+    },
+    {
+      "label": ".findByEmail()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/repository/UserRepository.java",
+      "source_location": "L13",
+      "id": "repository_userrepository_userrepository_findbyemail",
+      "community": 2,
+      "norm_label": ".findbyemail()"
+    },
+    {
+      "label": ".findByKeycloakId()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/repository/UserRepository.java",
+      "source_location": "L15",
+      "id": "repository_userrepository_userrepository_findbykeycloakid",
+      "community": 2,
+      "norm_label": ".findbykeycloakid()"
+    },
+    {
+      "label": ".existsByEmail()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/repository/UserRepository.java",
+      "source_location": "L17",
+      "id": "repository_userrepository_userrepository_existsbyemail",
+      "community": 2,
+      "norm_label": ".existsbyemail()"
+    },
+    {
+      "label": ".existsByKeycloakId()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/repository/UserRepository.java",
+      "source_location": "L19",
+      "id": "repository_userrepository_userrepository_existsbykeycloakid",
+      "community": 2,
+      "norm_label": ".existsbykeycloakid()"
+    },
+    {
+      "label": "AddressService.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_service_addressservice_java",
+      "community": 4,
+      "norm_label": "addressservice.java"
+    },
+    {
+      "label": "AddressService",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L18",
+      "id": "service_addressservice_addressservice",
+      "community": 4,
+      "norm_label": "addressservice"
+    },
+    {
+      "label": ".getCurrentUserAddresses()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L30",
+      "id": "service_addressservice_addressservice_getcurrentuseraddresses",
+      "community": 4,
+      "norm_label": ".getcurrentuseraddresses()"
+    },
+    {
+      "label": ".getAddressById()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L40",
+      "id": "service_addressservice_addressservice_getaddressbyid",
+      "community": 4,
+      "norm_label": ".getaddressbyid()"
+    },
+    {
+      "label": ".createAddress()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L57",
+      "id": "service_addressservice_addressservice_createaddress",
+      "community": 4,
+      "norm_label": ".createaddress()"
+    },
+    {
+      "label": ".updateAddress()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L83",
+      "id": "service_addressservice_addressservice_updateaddress",
+      "community": 4,
+      "norm_label": ".updateaddress()"
+    },
+    {
+      "label": ".deleteAddress()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L121",
+      "id": "service_addressservice_addressservice_deleteaddress",
+      "community": 4,
+      "norm_label": ".deleteaddress()"
+    },
+    {
+      "label": ".setDefaultAddress()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L151",
+      "id": "service_addressservice_addressservice_setdefaultaddress",
+      "community": 4,
+      "norm_label": ".setdefaultaddress()"
+    },
+    {
+      "label": ".getDefaultAddress()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L177",
+      "id": "service_addressservice_addressservice_getdefaultaddress",
+      "community": 4,
+      "norm_label": ".getdefaultaddress()"
+    },
+    {
+      "label": "KeycloakService.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_service_keycloakservice_java",
+      "community": 0,
+      "norm_label": "keycloakservice.java"
+    },
+    {
+      "label": "KeycloakService",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L29",
+      "id": "service_keycloakservice_keycloakservice",
+      "community": 0,
+      "norm_label": "keycloakservice"
+    },
+    {
+      "label": ".createUser()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L53",
+      "id": "service_keycloakservice_keycloakservice_createuser",
+      "community": 0,
+      "norm_label": ".createuser()"
+    },
+    {
+      "label": ".login()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L104",
+      "id": "service_keycloakservice_keycloakservice_login",
+      "community": 0,
+      "norm_label": ".login()"
+    },
+    {
+      "label": ".refreshToken()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L146",
+      "id": "service_keycloakservice_keycloakservice_refreshtoken",
+      "community": 0,
+      "norm_label": ".refreshtoken()"
+    },
+    {
+      "label": ".logout()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L186",
+      "id": "service_keycloakservice_keycloakservice_logout",
+      "community": 0,
+      "norm_label": ".logout()"
+    },
+    {
+      "label": ".assignRoleToUser()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L213",
+      "id": "service_keycloakservice_keycloakservice_assignroletouser",
+      "community": 0,
+      "norm_label": ".assignroletouser()"
+    },
+    {
+      "label": ".getUserById()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L232",
+      "id": "service_keycloakservice_keycloakservice_getuserbyid",
+      "community": 0,
+      "norm_label": ".getuserbyid()"
+    },
+    {
+      "label": ".findUserByEmail()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L241",
+      "id": "service_keycloakservice_keycloakservice_finduserbyemail",
+      "community": 0,
+      "norm_label": ".finduserbyemail()"
+    },
+    {
+      "label": ".sendResetPasswordEmail()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L252",
+      "id": "service_keycloakservice_keycloakservice_sendresetpasswordemail",
+      "community": 0,
+      "norm_label": ".sendresetpasswordemail()"
+    },
+    {
+      "label": ".updateUser()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L266",
+      "id": "service_keycloakservice_keycloakservice_updateuser",
+      "community": 0,
+      "norm_label": ".updateuser()"
+    },
+    {
+      "label": ".deleteUser()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L276",
+      "id": "service_keycloakservice_keycloakservice_deleteuser",
+      "community": 0,
+      "norm_label": ".deleteuser()"
+    },
+    {
+      "label": ".exchangeAuthorizationCode()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L286",
+      "id": "service_keycloakservice_keycloakservice_exchangeauthorizationcode",
+      "community": 0,
+      "norm_label": ".exchangeauthorizationcode()"
+    },
+    {
+      "label": ".getEmailFromIdToken()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L330",
+      "id": "service_keycloakservice_keycloakservice_getemailfromidtoken",
+      "community": 0,
+      "norm_label": ".getemailfromidtoken()"
+    },
+    {
+      "label": "UserService.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_service_userservice_java",
+      "community": 2,
+      "norm_label": "userservice.java"
+    },
+    {
+      "label": "UserService",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L27",
+      "id": "service_userservice_userservice",
+      "community": 2,
+      "norm_label": "userservice"
+    },
+    {
+      "label": ".createUser()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L38",
+      "id": "service_userservice_userservice_createuser",
+      "community": 6,
+      "norm_label": ".createuser()"
+    },
+    {
+      "label": ".getCurrentUser()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L61",
+      "id": "service_userservice_userservice_getcurrentuser",
+      "community": 2,
+      "norm_label": ".getcurrentuser()"
+    },
+    {
+      "label": ".getCurrentUserEntity()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L72",
+      "id": "service_userservice_userservice_getcurrentuserentity",
+      "community": 4,
+      "norm_label": ".getcurrentuserentity()"
+    },
+    {
+      "label": ".updateCurrentUser()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L82",
+      "id": "service_userservice_userservice_updatecurrentuser",
+      "community": 2,
+      "norm_label": ".updatecurrentuser()"
+    },
+    {
+      "label": ".getUserById()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L111",
+      "id": "service_userservice_userservice_getuserbyid",
+      "community": 2,
+      "norm_label": ".getuserbyid()"
+    },
+    {
+      "label": ".getUserByEmail()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L121",
+      "id": "service_userservice_userservice_getuserbyemail",
+      "community": 2,
+      "norm_label": ".getuserbyemail()"
+    },
+    {
+      "label": ".getUserByKeycloakId()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L130",
+      "id": "service_userservice_userservice_getuserbykeycloakid",
+      "community": 2,
+      "norm_label": ".getuserbykeycloakid()"
+    },
+    {
+      "label": ".existsByEmail()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L139",
+      "id": "service_userservice_userservice_existsbyemail",
+      "community": 2,
+      "norm_label": ".existsbyemail()"
+    },
+    {
+      "label": ".getCurrentKeycloakUserId()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L146",
+      "id": "service_userservice_userservice_getcurrentkeycloakuserid",
+      "community": 2,
+      "norm_label": ".getcurrentkeycloakuserid()"
+    },
+    {
+      "label": ".getCurrentUserRoles()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L160",
+      "id": "service_userservice_userservice_getcurrentuserroles",
+      "community": 2,
+      "norm_label": ".getcurrentuserroles()"
+    },
+    {
+      "label": ".deleteUser()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L177",
+      "id": "service_userservice_userservice_deleteuser",
+      "community": 2,
+      "norm_label": ".deleteuser()"
+    },
+    {
+      "label": ".getAllUsers()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L191",
+      "id": "service_userservice_userservice_getallusers",
+      "community": 2,
+      "norm_label": ".getallusers()"
+    },
+    {
+      "label": "AuthService.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L1",
+      "id": "src_main_java_com_ecommerce_userservice_service_authservice_java",
+      "community": 0,
+      "norm_label": "authservice.java"
+    },
+    {
+      "label": "AuthService",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L16",
+      "id": "service_authservice_authservice",
+      "community": 0,
+      "norm_label": "authservice"
+    },
+    {
+      "label": ".register()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L25",
+      "id": "service_authservice_authservice_register",
+      "community": 0,
+      "norm_label": ".register()"
+    },
+    {
+      "label": ".login()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L38",
+      "id": "service_authservice_authservice_login",
+      "community": 2,
+      "norm_label": ".login()"
+    },
+    {
+      "label": ".socialLogin()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L49",
+      "id": "service_authservice_authservice_sociallogin",
+      "community": 0,
+      "norm_label": ".sociallogin()"
+    },
+    {
+      "label": ".provisionSocialUser()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L74",
+      "id": "service_authservice_authservice_provisionsocialuser",
+      "community": 0,
+      "norm_label": ".provisionsocialuser()"
+    },
+    {
+      "label": ".buildFullName()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L96",
+      "id": "service_authservice_authservice_buildfullname",
+      "community": 0,
+      "norm_label": ".buildfullname()"
+    },
+    {
+      "label": ".refreshToken()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L103",
+      "id": "service_authservice_authservice_refreshtoken",
+      "community": 0,
+      "norm_label": ".refreshtoken()"
+    },
+    {
+      "label": ".logout()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L107",
+      "id": "service_authservice_authservice_logout",
+      "community": 0,
+      "norm_label": ".logout()"
+    },
+    {
+      "label": ".forgotPassword()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L113",
+      "id": "service_authservice_authservice_forgotpassword",
+      "community": 0,
+      "norm_label": ".forgotpassword()"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "readme_md",
+      "community": 3,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "USER & AUTH SERVICE",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "user_service_ecommerce_readme_user_auth_service",
+      "community": 3,
+      "norm_label": "user & auth service"
+    },
+    {
+      "label": "T\u00ednh n\u0103ng",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "id": "user_service_ecommerce_readme_t_nh_n_ng",
+      "community": 3,
+      "norm_label": "tinh nang"
+    },
+    {
+      "label": "Authentication",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "id": "user_service_ecommerce_readme_authentication",
+      "community": 3,
+      "norm_label": "authentication"
+    },
+    {
+      "label": "User Management",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L15",
+      "id": "user_service_ecommerce_readme_user_management",
+      "community": 3,
+      "norm_label": "user management"
+    },
+    {
+      "label": "Admin Features",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L22",
+      "id": "user_service_ecommerce_readme_admin_features",
+      "community": 3,
+      "norm_label": "admin features"
+    },
+    {
+      "label": "Tech Stack",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L27",
+      "id": "user_service_ecommerce_readme_tech_stack",
+      "community": 3,
+      "norm_label": "tech stack"
+    },
+    {
+      "label": "C\u00e0i \u0111\u1eb7t & Ch\u1ea1y",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L39",
+      "id": "user_service_ecommerce_readme_c_i_t_ch_y",
+      "community": 5,
+      "norm_label": "cai \u0111at & chay"
+    },
+    {
+      "label": "C\u1ea5u h\u00ecnh m\u00f4i tr\u01b0\u1eddng (.env)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L41",
+      "id": "user_service_ecommerce_readme_c_u_h_nh_m_i_tr_ng_env",
+      "community": 5,
+      "norm_label": "cau hinh moi truong (.env)"
+    },
+    {
+      "label": "code:bash (cp .env.example .env)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L43",
+      "id": "user_service_ecommerce_readme_codeblock_1",
+      "community": 5,
+      "norm_label": "code:bash (cp .env.example .env)"
+    },
+    {
+      "label": "K\u1ebft n\u1ed1i Kafka b\u00ean ngo\u00e0i v\u1edbi SASL_PLAINTEXT",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L49",
+      "id": "user_service_ecommerce_readme_k_t_n_i_kafka_b_n_ngo_i_v_i_sasl_plaintext",
+      "community": 5,
+      "norm_label": "ket noi kafka ben ngoai voi sasl_plaintext"
+    },
+    {
+      "label": "code:bash (KAFKA_BOOTSTRAP_SERVERS=<host1:9092,host2:9092>)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L55",
+      "id": "user_service_ecommerce_readme_codeblock_2",
+      "community": 5,
+      "norm_label": "code:bash (kafka_bootstrap_servers=<host1:9092,host2:9092>)"
+    },
+    {
+      "label": "code:bash (mvn spring-boot:run)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L66",
+      "id": "user_service_ecommerce_readme_codeblock_3",
+      "community": 5,
+      "norm_label": "code:bash (mvn spring-boot:run)"
+    },
+    {
+      "label": "Prerequisites",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L72",
+      "id": "user_service_ecommerce_readme_prerequisites",
+      "community": 5,
+      "norm_label": "prerequisites"
+    },
+    {
+      "label": "B\u01b0\u1edbc 1: Start Keycloak & PostgreSQL",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L79",
+      "id": "user_service_ecommerce_readme_b_c_1_start_keycloak_postgresql",
+      "community": 5,
+      "norm_label": "buoc 1: start keycloak & postgresql"
+    },
+    {
+      "label": "code:bash (docker compose up -d)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L81",
+      "id": "user_service_ecommerce_readme_codeblock_4",
+      "community": 5,
+      "norm_label": "code:bash (docker compose up -d)"
+    },
+    {
+      "label": "B\u01b0\u1edbc 2: C\u1ea5u h\u00ecnh Keycloak",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L85",
+      "id": "user_service_ecommerce_readme_b_c_2_c_u_h_nh_keycloak",
+      "community": 5,
+      "norm_label": "buoc 2: cau hinh keycloak"
+    },
+    {
+      "label": "B\u01b0\u1edbc 3: Build & Run",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L91",
+      "id": "user_service_ecommerce_readme_b_c_3_build_run",
+      "community": 5,
+      "norm_label": "buoc 3: build & run"
+    },
+    {
+      "label": "code:bash (# Build)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L93",
+      "id": "user_service_ecommerce_readme_codeblock_5",
+      "community": 5,
+      "norm_label": "code:bash (# build)"
+    },
+    {
+      "label": "API Endpoints",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L103",
+      "id": "user_service_ecommerce_readme_api_endpoints",
+      "community": 3,
+      "norm_label": "api endpoints"
+    },
+    {
+      "label": "Authentication Endpoints (Public)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L105",
+      "id": "user_service_ecommerce_readme_authentication_endpoints_public",
+      "community": 3,
+      "norm_label": "authentication endpoints (public)"
+    },
+    {
+      "label": "User Endpoints (Authenticated)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L116",
+      "id": "user_service_ecommerce_readme_user_endpoints_authenticated",
+      "community": 3,
+      "norm_label": "user endpoints (authenticated)"
+    },
+    {
+      "label": "Address Endpoints (Authenticated)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L123",
+      "id": "user_service_ecommerce_readme_address_endpoints_authenticated",
+      "community": 3,
+      "norm_label": "address endpoints (authenticated)"
+    },
+    {
+      "label": "Admin Endpoints (Admin Role)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L135",
+      "id": "user_service_ecommerce_readme_admin_endpoints_admin_role",
+      "community": 3,
+      "norm_label": "admin endpoints (admin role)"
+    },
+    {
+      "label": "API Documentation",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L143",
+      "id": "user_service_ecommerce_readme_api_documentation",
+      "community": 3,
+      "norm_label": "api documentation"
+    },
+    {
+      "label": "Testing",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L147",
+      "id": "user_service_ecommerce_readme_testing",
+      "community": 8,
+      "norm_label": "testing"
+    },
+    {
+      "label": "1. Register User",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L149",
+      "id": "user_service_ecommerce_readme_1_register_user",
+      "community": 8,
+      "norm_label": "1. register user"
+    },
+    {
+      "label": "code:bash (curl -X POST http://localhost:8081/api/auth/register \\)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L151",
+      "id": "user_service_ecommerce_readme_codeblock_6",
+      "community": 8,
+      "norm_label": "code:bash (curl -x post http://localhost:8081/api/auth/register \\)"
+    },
+    {
+      "label": "2. Login",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L162",
+      "id": "user_service_ecommerce_readme_2_login",
+      "community": 8,
+      "norm_label": "2. login"
+    },
+    {
+      "label": "code:bash (curl -X POST http://localhost:8081/api/auth/login \\)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L164",
+      "id": "user_service_ecommerce_readme_codeblock_7",
+      "community": 8,
+      "norm_label": "code:bash (curl -x post http://localhost:8081/api/auth/login \\)"
+    },
+    {
+      "label": "code:json ({)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L174",
+      "id": "user_service_ecommerce_readme_codeblock_8",
+      "community": 8,
+      "norm_label": "code:json ({)"
+    },
+    {
+      "label": "3. Get Current User (v\u1edbi token)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L192",
+      "id": "user_service_ecommerce_readme_3_get_current_user_v_i_token",
+      "community": 8,
+      "norm_label": "3. get current user (voi token)"
+    },
+    {
+      "label": "code:bash (TOKEN=\"YOUR_ACCESS_TOKEN_HERE\")",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L194",
+      "id": "user_service_ecommerce_readme_codeblock_9",
+      "community": 8,
+      "norm_label": "code:bash (token=\"your_access_token_here\")"
+    },
+    {
+      "label": "4. Create Address",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L201",
+      "id": "user_service_ecommerce_readme_4_create_address",
+      "community": 8,
+      "norm_label": "4. create address"
+    },
+    {
+      "label": "code:bash (curl -X POST http://localhost:8081/api/users/me/addresses \\)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L203",
+      "id": "user_service_ecommerce_readme_codeblock_10",
+      "community": 8,
+      "norm_label": "code:bash (curl -x post http://localhost:8081/api/users/me/addresses \\)"
+    },
+    {
+      "label": "Security",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L218",
+      "id": "user_service_ecommerce_readme_security",
+      "community": 3,
+      "norm_label": "security"
+    },
+    {
+      "label": "JWT Token Format",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L220",
+      "id": "user_service_ecommerce_readme_jwt_token_format",
+      "community": 3,
+      "norm_label": "jwt token format"
+    },
+    {
+      "label": "Roles",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L229",
+      "id": "user_service_ecommerce_readme_roles",
+      "community": 3,
+      "norm_label": "roles"
+    },
+    {
+      "label": "Role-based Access Control",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L236",
+      "id": "user_service_ecommerce_readme_role_based_access_control",
+      "community": 3,
+      "norm_label": "role-based access control"
+    },
+    {
+      "label": "code:java (@PreAuthorize(\"hasRole('ADMIN')\"))",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L238",
+      "id": "user_service_ecommerce_readme_codeblock_11",
+      "community": 3,
+      "norm_label": "code:java (@preauthorize(\"hasrole('admin')\"))"
+    },
+    {
+      "label": "Database Schema",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L245",
+      "id": "user_service_ecommerce_readme_database_schema",
+      "community": 3,
+      "norm_label": "database schema"
+    },
+    {
+      "label": "users",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L246",
+      "id": "user_service_ecommerce_readme_users",
+      "community": 0,
+      "norm_label": "users"
+    },
+    {
+      "label": "addresses",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L261",
+      "id": "user_service_ecommerce_readme_addresses",
+      "community": 3,
+      "norm_label": "addresses"
+    },
+    {
+      "label": "user_preferences",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L278",
+      "id": "user_service_ecommerce_readme_user_preferences",
+      "community": 3,
+      "norm_label": "user_preferences"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/UserServiceApplication.java",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_userserviceapplication_java",
+      "target": "userservice_userserviceapplication_userserviceapplication",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/UserServiceApplication.java",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "userservice_userserviceapplication_userserviceapplication",
+      "target": "userservice_userserviceapplication_userserviceapplication_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/config/KafkaProducerProperties.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_config_kafkaproducerproperties_java",
+      "target": "config_kafkaproducerproperties_kafkaproducerproperties",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/config/KeycloakConfig.java",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_config_keycloakconfig_java",
+      "target": "config_keycloakconfig_keycloakconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/config/KeycloakConfig.java",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_config_keycloakconfig_java",
+      "target": "config_keycloakconfig_admin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/config/KeycloakConfig.java",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "config_keycloakconfig_keycloakconfig",
+      "target": "config_keycloakconfig_keycloakconfig_keycloakadminclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/config/KeycloakConfig.java",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "config_keycloakconfig_keycloakconfig",
+      "target": "config_keycloakconfig_keycloakconfig_keycloakclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/config/SecurityConfig.java",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_config_securityconfig_java",
+      "target": "config_securityconfig_securityconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/config/SecurityConfig.java",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "config_securityconfig_securityconfig",
+      "target": "config_securityconfig_securityconfig_securityconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/config/SecurityConfig.java",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "config_securityconfig_securityconfig",
+      "target": "config_securityconfig_securityconfig_securityfilterchain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/config/SecurityConfig.java",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "config_securityconfig_securityconfig",
+      "target": "config_securityconfig_securityconfig_jwtauthenticationconverter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/config/SecurityConfig.java",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "config_securityconfig_securityconfig",
+      "target": "config_securityconfig_securityconfig_corsconfigurationsource",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/config/SecurityConfig.java",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "config_securityconfig_securityconfig_securityfilterchain",
+      "target": "config_securityconfig_securityconfig_corsconfigurationsource",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/config/SecurityConfig.java",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "config_securityconfig_securityconfig_securityfilterchain",
+      "target": "config_securityconfig_securityconfig_jwtauthenticationconverter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AddressController.java",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_controller_addresscontroller_java",
+      "target": "controller_addresscontroller_addresscontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AddressController.java",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "controller_addresscontroller_addresscontroller",
+      "target": "controller_addresscontroller_addresscontroller_getalladdresses",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AddressController.java",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "controller_addresscontroller_addresscontroller",
+      "target": "controller_addresscontroller_addresscontroller_getaddressbyid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AddressController.java",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "controller_addresscontroller_addresscontroller",
+      "target": "controller_addresscontroller_addresscontroller_getdefaultaddress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AddressController.java",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "controller_addresscontroller_addresscontroller",
+      "target": "controller_addresscontroller_addresscontroller_createaddress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AddressController.java",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "controller_addresscontroller_addresscontroller",
+      "target": "controller_addresscontroller_addresscontroller_updateaddress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AddressController.java",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "controller_addresscontroller_addresscontroller",
+      "target": "controller_addresscontroller_addresscontroller_setdefaultaddress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AddressController.java",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "controller_addresscontroller_addresscontroller",
+      "target": "controller_addresscontroller_addresscontroller_deleteaddress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AddressController.java",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "controller_addresscontroller_addresscontroller_getalladdresses",
+      "target": "service_addressservice_addressservice_getcurrentuseraddresses"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AddressController.java",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "controller_addresscontroller_addresscontroller_getalladdresses",
+      "target": "response_apiresponse_apiresponse_success"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AddressController.java",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "controller_addresscontroller_addresscontroller_getaddressbyid",
+      "target": "response_apiresponse_apiresponse_success"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AddressController.java",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "controller_addresscontroller_addresscontroller_getdefaultaddress",
+      "target": "response_apiresponse_apiresponse_success"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AddressController.java",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "controller_addresscontroller_addresscontroller_createaddress",
+      "target": "response_apiresponse_apiresponse_success"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AddressController.java",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "controller_addresscontroller_addresscontroller_updateaddress",
+      "target": "response_apiresponse_apiresponse_success"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AddressController.java",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "controller_addresscontroller_addresscontroller_setdefaultaddress",
+      "target": "response_apiresponse_apiresponse_success"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AddressController.java",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "controller_addresscontroller_addresscontroller_deleteaddress",
+      "target": "response_apiresponse_apiresponse_success"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AuthController.java",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_controller_authcontroller_java",
+      "target": "controller_authcontroller_authcontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AuthController.java",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "controller_authcontroller_authcontroller",
+      "target": "controller_authcontroller_authcontroller_register",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AuthController.java",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "controller_authcontroller_authcontroller",
+      "target": "controller_authcontroller_authcontroller_login",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AuthController.java",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "controller_authcontroller_authcontroller",
+      "target": "controller_authcontroller_authcontroller_sociallogin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AuthController.java",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "controller_authcontroller_authcontroller",
+      "target": "controller_authcontroller_authcontroller_refreshtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AuthController.java",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "controller_authcontroller_authcontroller",
+      "target": "controller_authcontroller_authcontroller_logout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AuthController.java",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "controller_authcontroller_authcontroller",
+      "target": "controller_authcontroller_authcontroller_forgotpassword",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AuthController.java",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "controller_authcontroller_authcontroller_register",
+      "target": "response_apiresponse_apiresponse_success"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AuthController.java",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "controller_authcontroller_authcontroller_register",
+      "target": "response_apiresponse_apiresponse_error"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AuthController.java",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "controller_authcontroller_authcontroller_login",
+      "target": "response_apiresponse_apiresponse_success"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AuthController.java",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "controller_authcontroller_authcontroller_sociallogin",
+      "target": "response_apiresponse_apiresponse_success"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AuthController.java",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "controller_authcontroller_authcontroller_refreshtoken",
+      "target": "response_apiresponse_apiresponse_error"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AuthController.java",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "controller_authcontroller_authcontroller_refreshtoken",
+      "target": "response_apiresponse_apiresponse_success"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AuthController.java",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "controller_authcontroller_authcontroller_logout",
+      "target": "response_apiresponse_apiresponse_success"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/AuthController.java",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "controller_authcontroller_authcontroller_forgotpassword",
+      "target": "response_apiresponse_apiresponse_success"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/UserController.java",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_controller_usercontroller_java",
+      "target": "controller_usercontroller_usercontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/UserController.java",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "controller_usercontroller_usercontroller",
+      "target": "controller_usercontroller_usercontroller_getcurrentuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/UserController.java",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "controller_usercontroller_usercontroller",
+      "target": "controller_usercontroller_usercontroller_updatecurrentuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/UserController.java",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "controller_usercontroller_usercontroller",
+      "target": "controller_usercontroller_usercontroller_getuserbyid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/UserController.java",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "controller_usercontroller_usercontroller",
+      "target": "controller_usercontroller_usercontroller_getallusers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/UserController.java",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "controller_usercontroller_usercontroller",
+      "target": "controller_usercontroller_usercontroller_deleteuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/UserController.java",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "controller_usercontroller_usercontroller_getcurrentuser",
+      "target": "response_apiresponse_apiresponse_success"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/UserController.java",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "controller_usercontroller_usercontroller_updatecurrentuser",
+      "target": "response_apiresponse_apiresponse_success"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/UserController.java",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "controller_usercontroller_usercontroller_getuserbyid",
+      "target": "response_apiresponse_apiresponse_success"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/UserController.java",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "controller_usercontroller_usercontroller_getallusers",
+      "target": "response_apiresponse_apiresponse_success"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/controller/UserController.java",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "controller_usercontroller_usercontroller_deleteuser",
+      "target": "response_apiresponse_apiresponse_success"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/event/UserRegisteredEvent.java",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_dto_event_userregisteredevent_java",
+      "target": "event_userregisteredevent_userregisteredevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/request/CreateAddressRequest.java",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_dto_request_createaddressrequest_java",
+      "target": "request_createaddressrequest_createaddressrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/request/LoginRequest.java",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_dto_request_loginrequest_java",
+      "target": "request_loginrequest_loginrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/request/RegisterRequest.java",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_dto_request_registerrequest_java",
+      "target": "request_registerrequest_registerrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/request/UpdateUserRequest.java",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_dto_request_updateuserrequest_java",
+      "target": "request_updateuserrequest_updateuserrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/request/OAuthRequest.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_dto_request_oauthrequest_java",
+      "target": "request_oauthrequest_oauthrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/response/AddressResponse.java",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_dto_response_addressresponse_java",
+      "target": "response_addressresponse_addressresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/response/ApiResponse.java",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_dto_response_apiresponse_java",
+      "target": "response_apiresponse_apiresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/response/ApiResponse.java",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "response_apiresponse_apiresponse",
+      "target": "response_apiresponse_apiresponse_success",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/response/ApiResponse.java",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "response_apiresponse_apiresponse",
+      "target": "response_apiresponse_apiresponse_error",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/response/ApiResponse.java",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "response_apiresponse_apiresponse_error",
+      "target": "response_apiresponse_apiresponse_success",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/GlobalExceptionHandler.java",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "exception_globalexceptionhandler_globalexceptionhandler_handlevalidationexceptions",
+      "target": "response_apiresponse_apiresponse_success"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/event/UserRegistrationEventProducer.java",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "event_userregistrationeventproducer_userregistrationeventproducer_publish",
+      "target": "response_apiresponse_apiresponse_error"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/GlobalExceptionHandler.java",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "exception_globalexceptionhandler_globalexceptionhandler_handleresourcenotfound",
+      "target": "response_apiresponse_apiresponse_error"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/GlobalExceptionHandler.java",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "exception_globalexceptionhandler_globalexceptionhandler_handleuseralreadyexists",
+      "target": "response_apiresponse_apiresponse_error"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/GlobalExceptionHandler.java",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "exception_globalexceptionhandler_globalexceptionhandler_handleauthenticationexception",
+      "target": "response_apiresponse_apiresponse_error"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/GlobalExceptionHandler.java",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "exception_globalexceptionhandler_globalexceptionhandler_handlebadcredentials",
+      "target": "response_apiresponse_apiresponse_error"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/GlobalExceptionHandler.java",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "exception_globalexceptionhandler_globalexceptionhandler_handleaccessdenied",
+      "target": "response_apiresponse_apiresponse_error"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/GlobalExceptionHandler.java",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "exception_globalexceptionhandler_globalexceptionhandler_handlevalidationexceptions",
+      "target": "response_apiresponse_apiresponse_error"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/GlobalExceptionHandler.java",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "exception_globalexceptionhandler_globalexceptionhandler_handlegenericexception",
+      "target": "response_apiresponse_apiresponse_error"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice_createuser",
+      "target": "response_apiresponse_apiresponse_error"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L141",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice_login",
+      "target": "response_apiresponse_apiresponse_error"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L181",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice_refreshtoken",
+      "target": "response_apiresponse_apiresponse_error"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L209",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice_logout",
+      "target": "response_apiresponse_apiresponse_error"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L227",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice_assignroletouser",
+      "target": "response_apiresponse_apiresponse_error"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L236",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice_getuserbyid",
+      "target": "response_apiresponse_apiresponse_error"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L247",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice_finduserbyemail",
+      "target": "response_apiresponse_apiresponse_error"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L261",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice_sendresetpasswordemail",
+      "target": "response_apiresponse_apiresponse_error"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L271",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice_updateuser",
+      "target": "response_apiresponse_apiresponse_error"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L281",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice_deleteuser",
+      "target": "response_apiresponse_apiresponse_error"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L325",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice_exchangeauthorizationcode",
+      "target": "response_apiresponse_apiresponse_error"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L353",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice_getemailfromidtoken",
+      "target": "response_apiresponse_apiresponse_error"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "service_authservice_authservice_provisionsocialuser",
+      "target": "response_apiresponse_apiresponse_error"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/response/AuthResponse.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_dto_response_authresponse_java",
+      "target": "response_authresponse_authresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/dto/response/UserResponse.java",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_dto_response_userresponse_java",
+      "target": "response_userresponse_userresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/entity/Address.java",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_entity_address_java",
+      "target": "entity_address_address",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/entity/User.java",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_entity_user_java",
+      "target": "entity_user_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/entity/User.java",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "entity_user_user",
+      "target": "entity_user_user_addaddress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/entity/User.java",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "entity_user_user",
+      "target": "entity_user_user_removeaddress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "service_userservice_userservice_createuser",
+      "target": "entity_user_user"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/entity/UserPreference.java",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_entity_userpreference_java",
+      "target": "entity_userpreference_userpreference",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/event/UserRegistrationEventProducer.java",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_event_userregistrationeventproducer_java",
+      "target": "event_userregistrationeventproducer_userregistrationeventproducer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/event/UserRegistrationEventProducer.java",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "event_userregistrationeventproducer_userregistrationeventproducer",
+      "target": "event_userregistrationeventproducer_userregistrationeventproducer_publishaftercommit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/event/UserRegistrationEventProducer.java",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "event_userregistrationeventproducer_userregistrationeventproducer",
+      "target": "event_userregistrationeventproducer_userregistrationeventproducer_publish",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/event/UserRegistrationEventProducer.java",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "event_userregistrationeventproducer_userregistrationeventproducer_publishaftercommit",
+      "target": "event_userregistrationeventproducer_userregistrationeventproducer_publish",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "service_userservice_userservice_createuser",
+      "target": "event_userregistrationeventproducer_userregistrationeventproducer_publishaftercommit"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/AuthenticationException.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_exception_authenticationexception_java",
+      "target": "exception_authenticationexception_authenticationexception",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/AuthenticationException.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "exception_authenticationexception_authenticationexception",
+      "target": "runtimeexception",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/AuthenticationException.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "exception_authenticationexception_authenticationexception",
+      "target": "exception_authenticationexception_authenticationexception_authenticationexception",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/ResourceNotFoundException.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "exception_resourcenotfoundexception_resourcenotfoundexception",
+      "target": "runtimeexception",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/UserAlreadyExistsException.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "exception_useralreadyexistsexception_useralreadyexistsexception",
+      "target": "runtimeexception",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/GlobalExceptionHandler.java",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_exception_globalexceptionhandler_java",
+      "target": "exception_globalexceptionhandler_globalexceptionhandler",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/GlobalExceptionHandler.java",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "exception_globalexceptionhandler_globalexceptionhandler",
+      "target": "exception_globalexceptionhandler_globalexceptionhandler_handleresourcenotfound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/GlobalExceptionHandler.java",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "exception_globalexceptionhandler_globalexceptionhandler",
+      "target": "exception_globalexceptionhandler_globalexceptionhandler_handleuseralreadyexists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/GlobalExceptionHandler.java",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "exception_globalexceptionhandler_globalexceptionhandler",
+      "target": "exception_globalexceptionhandler_globalexceptionhandler_handleauthenticationexception",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/GlobalExceptionHandler.java",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "exception_globalexceptionhandler_globalexceptionhandler",
+      "target": "exception_globalexceptionhandler_globalexceptionhandler_handlebadcredentials",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/GlobalExceptionHandler.java",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "exception_globalexceptionhandler_globalexceptionhandler",
+      "target": "exception_globalexceptionhandler_globalexceptionhandler_handleaccessdenied",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/GlobalExceptionHandler.java",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "exception_globalexceptionhandler_globalexceptionhandler",
+      "target": "exception_globalexceptionhandler_globalexceptionhandler_handlevalidationexceptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/GlobalExceptionHandler.java",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "exception_globalexceptionhandler_globalexceptionhandler",
+      "target": "exception_globalexceptionhandler_globalexceptionhandler_handlegenericexception",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/ResourceNotFoundException.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_exception_resourcenotfoundexception_java",
+      "target": "exception_resourcenotfoundexception_resourcenotfoundexception",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/ResourceNotFoundException.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "exception_resourcenotfoundexception_resourcenotfoundexception",
+      "target": "exception_resourcenotfoundexception_resourcenotfoundexception_resourcenotfoundexception",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/UserAlreadyExistsException.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_exception_useralreadyexistsexception_java",
+      "target": "exception_useralreadyexistsexception_useralreadyexistsexception",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/exception/UserAlreadyExistsException.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "exception_useralreadyexistsexception_useralreadyexistsexception",
+      "target": "exception_useralreadyexistsexception_useralreadyexistsexception_useralreadyexistsexception",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/mapper/AddressMapper.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_mapper_addressmapper_java",
+      "target": "mapper_addressmapper_addressmapper",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/mapper/AddressMapper.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "mapper_addressmapper_addressmapper",
+      "target": "mapper_addressmapper_addressmapper_toaddress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/mapper/AddressMapper.java",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "mapper_addressmapper_addressmapper",
+      "target": "mapper_addressmapper_addressmapper_toaddressresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/mapper/AddressMapper.java",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "mapper_addressmapper_addressmapper",
+      "target": "mapper_addressmapper_addressmapper_update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L268",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice_updateuser",
+      "target": "mapper_addressmapper_addressmapper_update"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/mapper/UserMapper.java",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_mapper_usermapper_java",
+      "target": "mapper_usermapper_usermapper",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/mapper/UserMapper.java",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "mapper_usermapper_usermapper",
+      "target": "mapper_usermapper_usermapper_toentity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/mapper/UserMapper.java",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "mapper_usermapper_usermapper",
+      "target": "mapper_usermapper_usermapper_toresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/mapper/UserMapper.java",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "mapper_usermapper_usermapper",
+      "target": "mapper_usermapper_usermapper_toresponselist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/mapper/UserMapper.java",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "mapper_usermapper_usermapper",
+      "target": "mapper_usermapper_usermapper_updateentityfromrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/mapper/UserMapper.java",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "mapper_usermapper_usermapper",
+      "target": "mapper_usermapper_usermapper_toaddressentity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/mapper/UserMapper.java",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "mapper_usermapper_usermapper",
+      "target": "mapper_usermapper_usermapper_toaddressresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/mapper/UserMapper.java",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "mapper_usermapper_usermapper",
+      "target": "mapper_usermapper_usermapper_toaddressresponselist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "service_userservice_userservice_createuser",
+      "target": "mapper_usermapper_usermapper_toentity"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "service_userservice_userservice_getcurrentuser",
+      "target": "mapper_usermapper_usermapper_toresponse"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "service_userservice_userservice_updatecurrentuser",
+      "target": "mapper_usermapper_usermapper_toresponse"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "service_userservice_userservice_getuserbyid",
+      "target": "mapper_usermapper_usermapper_toresponse"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "service_authservice_authservice_register",
+      "target": "mapper_usermapper_usermapper_toresponse"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "service_authservice_authservice_login",
+      "target": "mapper_usermapper_usermapper_toresponse"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "service_authservice_authservice_sociallogin",
+      "target": "mapper_usermapper_usermapper_toresponse"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L193",
+      "weight": 1.0,
+      "source": "service_userservice_userservice_getallusers",
+      "target": "mapper_usermapper_usermapper_toresponselist"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "service_userservice_userservice_updatecurrentuser",
+      "target": "mapper_usermapper_usermapper_updateentityfromrequest"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "service_addressservice_addressservice_createaddress",
+      "target": "mapper_usermapper_usermapper_toaddressentity"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "service_addressservice_addressservice_getcurrentuseraddresses",
+      "target": "mapper_usermapper_usermapper_toaddressresponselist"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/repository/AddressRepository.java",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_repository_addressrepository_java",
+      "target": "repository_addressrepository_addressrepository",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/repository/AddressRepository.java",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "repository_addressrepository_addressrepository",
+      "target": "repository_addressrepository_addressrepository_findbyuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/repository/AddressRepository.java",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "repository_addressrepository_addressrepository",
+      "target": "repository_addressrepository_addressrepository_findbyuserorderbyisdefaultdesccreatedatdesc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/repository/AddressRepository.java",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "repository_addressrepository_addressrepository",
+      "target": "repository_addressrepository_addressrepository_findbyuserandisdefaulttrue",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/repository/AddressRepository.java",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "repository_addressrepository_addressrepository",
+      "target": "repository_addressrepository_addressrepository_unsetdefaultforuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "service_addressservice_addressservice_getcurrentuseraddresses",
+      "target": "repository_addressrepository_addressrepository_findbyuserorderbyisdefaultdesccreatedatdesc"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L180",
+      "weight": 1.0,
+      "source": "service_addressservice_addressservice_getdefaultaddress",
+      "target": "repository_addressrepository_addressrepository_findbyuserandisdefaulttrue"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "service_addressservice_addressservice_createaddress",
+      "target": "repository_addressrepository_addressrepository_unsetdefaultforuser"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "service_addressservice_addressservice_updateaddress",
+      "target": "repository_addressrepository_addressrepository_unsetdefaultforuser"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L163",
+      "weight": 1.0,
+      "source": "service_addressservice_addressservice_setdefaultaddress",
+      "target": "repository_addressrepository_addressrepository_unsetdefaultforuser"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/repository/UserPreferenceRepository.java",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_repository_userpreferencerepository_java",
+      "target": "repository_userpreferencerepository_userpreferencerepository",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/repository/UserPreferenceRepository.java",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "repository_userpreferencerepository_userpreferencerepository",
+      "target": "repository_userpreferencerepository_userpreferencerepository_findbyuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/repository/UserRepository.java",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_repository_userrepository_java",
+      "target": "repository_userrepository_userrepository",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/repository/UserRepository.java",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "repository_userrepository_userrepository",
+      "target": "repository_userrepository_userrepository_findbyemail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/repository/UserRepository.java",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "repository_userrepository_userrepository",
+      "target": "repository_userrepository_userrepository_findbykeycloakid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/repository/UserRepository.java",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "repository_userrepository_userrepository",
+      "target": "repository_userrepository_userrepository_existsbyemail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/repository/UserRepository.java",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "repository_userrepository_userrepository",
+      "target": "repository_userrepository_userrepository_existsbykeycloakid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "service_userservice_userservice_getuserbyemail",
+      "target": "repository_userrepository_userrepository_findbyemail"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "service_userservice_userservice_getcurrentuserentity",
+      "target": "repository_userrepository_userrepository_findbykeycloakid"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L132",
+      "weight": 1.0,
+      "source": "service_userservice_userservice_getuserbykeycloakid",
+      "target": "repository_userrepository_userrepository_findbykeycloakid"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_service_addressservice_java",
+      "target": "service_addressservice_addressservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "service_addressservice_addressservice",
+      "target": "service_addressservice_addressservice_getcurrentuseraddresses",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "service_addressservice_addressservice",
+      "target": "service_addressservice_addressservice_getaddressbyid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "service_addressservice_addressservice",
+      "target": "service_addressservice_addressservice_createaddress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "service_addressservice_addressservice",
+      "target": "service_addressservice_addressservice_updateaddress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L121",
+      "weight": 1.0,
+      "source": "service_addressservice_addressservice",
+      "target": "service_addressservice_addressservice_deleteaddress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L151",
+      "weight": 1.0,
+      "source": "service_addressservice_addressservice",
+      "target": "service_addressservice_addressservice_setdefaultaddress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L177",
+      "weight": 1.0,
+      "source": "service_addressservice_addressservice",
+      "target": "service_addressservice_addressservice_getdefaultaddress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "service_addressservice_addressservice_getcurrentuseraddresses",
+      "target": "service_userservice_userservice_getcurrentuserentity"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "service_addressservice_addressservice_getaddressbyid",
+      "target": "service_userservice_userservice_getcurrentuserentity"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "service_addressservice_addressservice_createaddress",
+      "target": "service_userservice_userservice_getcurrentuserentity"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "service_addressservice_addressservice_updateaddress",
+      "target": "service_userservice_userservice_getcurrentuserentity"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "service_addressservice_addressservice_deleteaddress",
+      "target": "service_userservice_userservice_getcurrentuserentity"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L153",
+      "weight": 1.0,
+      "source": "service_addressservice_addressservice_setdefaultaddress",
+      "target": "service_userservice_userservice_getcurrentuserentity"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AddressService.java",
+      "source_location": "L179",
+      "weight": 1.0,
+      "source": "service_addressservice_addressservice_getdefaultaddress",
+      "target": "service_userservice_userservice_getcurrentuserentity"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_service_keycloakservice_java",
+      "target": "service_keycloakservice_keycloakservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice",
+      "target": "service_keycloakservice_keycloakservice_createuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice",
+      "target": "service_keycloakservice_keycloakservice_login",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L146",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice",
+      "target": "service_keycloakservice_keycloakservice_refreshtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L186",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice",
+      "target": "service_keycloakservice_keycloakservice_logout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L213",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice",
+      "target": "service_keycloakservice_keycloakservice_assignroletouser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L232",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice",
+      "target": "service_keycloakservice_keycloakservice_getuserbyid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L241",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice",
+      "target": "service_keycloakservice_keycloakservice_finduserbyemail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L252",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice",
+      "target": "service_keycloakservice_keycloakservice_sendresetpasswordemail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L266",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice",
+      "target": "service_keycloakservice_keycloakservice_updateuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L276",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice",
+      "target": "service_keycloakservice_keycloakservice_deleteuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L286",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice",
+      "target": "service_keycloakservice_keycloakservice_exchangeauthorizationcode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L330",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice",
+      "target": "service_keycloakservice_keycloakservice_getemailfromidtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice_createuser",
+      "target": "service_keycloakservice_keycloakservice_assignroletouser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice_createuser",
+      "target": "user_service_ecommerce_readme_users"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L130",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice_login",
+      "target": "service_keycloakservice_keycloakservice_refreshtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L311",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice_exchangeauthorizationcode",
+      "target": "service_keycloakservice_keycloakservice_refreshtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L218",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice_assignroletouser",
+      "target": "user_service_ecommerce_readme_roles"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L221",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice_assignroletouser",
+      "target": "user_service_ecommerce_readme_users"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L234",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice_getuserbyid",
+      "target": "user_service_ecommerce_readme_users"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L243",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice_finduserbyemail",
+      "target": "user_service_ecommerce_readme_users"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "service_authservice_authservice_provisionsocialuser",
+      "target": "service_keycloakservice_keycloakservice_finduserbyemail"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L118",
+      "weight": 1.0,
+      "source": "service_authservice_authservice_forgotpassword",
+      "target": "service_keycloakservice_keycloakservice_finduserbyemail"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L255",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice_sendresetpasswordemail",
+      "target": "user_service_ecommerce_readme_users"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "service_authservice_authservice_forgotpassword",
+      "target": "service_keycloakservice_keycloakservice_sendresetpasswordemail"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L268",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice_updateuser",
+      "target": "user_service_ecommerce_readme_users"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "service_userservice_userservice_updatecurrentuser",
+      "target": "service_keycloakservice_keycloakservice_updateuser"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/KeycloakService.java",
+      "source_location": "L278",
+      "weight": 1.0,
+      "source": "service_keycloakservice_keycloakservice_deleteuser",
+      "target": "user_service_ecommerce_readme_users"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "service_authservice_authservice_sociallogin",
+      "target": "service_keycloakservice_keycloakservice_exchangeauthorizationcode"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "service_authservice_authservice_sociallogin",
+      "target": "service_keycloakservice_keycloakservice_getemailfromidtoken"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_service_userservice_java",
+      "target": "service_userservice_userservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "service_userservice_userservice",
+      "target": "service_userservice_userservice_createuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "service_userservice_userservice",
+      "target": "service_userservice_userservice_getcurrentuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "service_userservice_userservice",
+      "target": "service_userservice_userservice_getcurrentuserentity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "service_userservice_userservice",
+      "target": "service_userservice_userservice_updatecurrentuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "service_userservice_userservice",
+      "target": "service_userservice_userservice_getuserbyid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L121",
+      "weight": 1.0,
+      "source": "service_userservice_userservice",
+      "target": "service_userservice_userservice_getuserbyemail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L130",
+      "weight": 1.0,
+      "source": "service_userservice_userservice",
+      "target": "service_userservice_userservice_getuserbykeycloakid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L139",
+      "weight": 1.0,
+      "source": "service_userservice_userservice",
+      "target": "service_userservice_userservice_existsbyemail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L146",
+      "weight": 1.0,
+      "source": "service_userservice_userservice",
+      "target": "service_userservice_userservice_getcurrentkeycloakuserid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L160",
+      "weight": 1.0,
+      "source": "service_userservice_userservice",
+      "target": "service_userservice_userservice_getcurrentuserroles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L177",
+      "weight": 1.0,
+      "source": "service_userservice_userservice",
+      "target": "service_userservice_userservice_deleteuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L191",
+      "weight": 1.0,
+      "source": "service_userservice_userservice",
+      "target": "service_userservice_userservice_getallusers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "service_userservice_userservice_getcurrentuser",
+      "target": "service_userservice_userservice_getcurrentuserentity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "service_userservice_userservice_getcurrentuser",
+      "target": "service_userservice_userservice_getcurrentuserroles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "service_userservice_userservice_getcurrentuserentity",
+      "target": "service_userservice_userservice_getcurrentkeycloakuserid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "service_userservice_userservice_updatecurrentuser",
+      "target": "service_userservice_userservice_getcurrentuserentity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "service_userservice_userservice_updatecurrentuser",
+      "target": "service_userservice_userservice_getuserbyid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/UserService.java",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "service_userservice_userservice_updatecurrentuser",
+      "target": "service_userservice_userservice_getcurrentuserroles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "service_authservice_authservice_login",
+      "target": "service_userservice_userservice_getuserbyemail"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "service_authservice_authservice_sociallogin",
+      "target": "service_userservice_userservice_getuserbyemail"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_main_java_com_ecommerce_userservice_service_authservice_java",
+      "target": "service_authservice_authservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "service_authservice_authservice",
+      "target": "service_authservice_authservice_register",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "service_authservice_authservice",
+      "target": "service_authservice_authservice_login",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "service_authservice_authservice",
+      "target": "service_authservice_authservice_sociallogin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "service_authservice_authservice",
+      "target": "service_authservice_authservice_provisionsocialuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "service_authservice_authservice",
+      "target": "service_authservice_authservice_buildfullname",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "service_authservice_authservice",
+      "target": "service_authservice_authservice_refreshtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "service_authservice_authservice",
+      "target": "service_authservice_authservice_logout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L113",
+      "weight": 1.0,
+      "source": "service_authservice_authservice",
+      "target": "service_authservice_authservice_forgotpassword",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "service_authservice_authservice_sociallogin",
+      "target": "service_authservice_authservice_provisionsocialuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/ecommerce/userservice/service/AuthService.java",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "service_authservice_authservice_provisionsocialuser",
+      "target": "service_authservice_authservice_buildfullname",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme_md",
+      "target": "user_service_ecommerce_readme_user_auth_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_user_auth_service",
+      "target": "user_service_ecommerce_readme_t_nh_n_ng",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_user_auth_service",
+      "target": "user_service_ecommerce_readme_tech_stack",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_user_auth_service",
+      "target": "user_service_ecommerce_readme_c_i_t_ch_y",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_user_auth_service",
+      "target": "user_service_ecommerce_readme_api_endpoints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L143",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_user_auth_service",
+      "target": "user_service_ecommerce_readme_api_documentation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_user_auth_service",
+      "target": "user_service_ecommerce_readme_testing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L218",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_user_auth_service",
+      "target": "user_service_ecommerce_readme_security",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L245",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_user_auth_service",
+      "target": "user_service_ecommerce_readme_database_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_t_nh_n_ng",
+      "target": "user_service_ecommerce_readme_authentication",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_t_nh_n_ng",
+      "target": "user_service_ecommerce_readme_user_management",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_t_nh_n_ng",
+      "target": "user_service_ecommerce_readme_admin_features",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_c_i_t_ch_y",
+      "target": "user_service_ecommerce_readme_c_u_h_nh_m_i_tr_ng_env",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_c_i_t_ch_y",
+      "target": "user_service_ecommerce_readme_k_t_n_i_kafka_b_n_ngo_i_v_i_sasl_plaintext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_c_i_t_ch_y",
+      "target": "user_service_ecommerce_readme_prerequisites",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_c_i_t_ch_y",
+      "target": "user_service_ecommerce_readme_b_c_1_start_keycloak_postgresql",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_c_i_t_ch_y",
+      "target": "user_service_ecommerce_readme_b_c_2_c_u_h_nh_keycloak",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_c_i_t_ch_y",
+      "target": "user_service_ecommerce_readme_b_c_3_build_run",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_c_u_h_nh_m_i_tr_ng_env",
+      "target": "user_service_ecommerce_readme_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_k_t_n_i_kafka_b_n_ngo_i_v_i_sasl_plaintext",
+      "target": "user_service_ecommerce_readme_codeblock_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_k_t_n_i_kafka_b_n_ngo_i_v_i_sasl_plaintext",
+      "target": "user_service_ecommerce_readme_codeblock_3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_b_c_1_start_keycloak_postgresql",
+      "target": "user_service_ecommerce_readme_codeblock_4",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_b_c_3_build_run",
+      "target": "user_service_ecommerce_readme_codeblock_5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_api_endpoints",
+      "target": "user_service_ecommerce_readme_authentication_endpoints_public",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L116",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_api_endpoints",
+      "target": "user_service_ecommerce_readme_user_endpoints_authenticated",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_api_endpoints",
+      "target": "user_service_ecommerce_readme_address_endpoints_authenticated",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L135",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_api_endpoints",
+      "target": "user_service_ecommerce_readme_admin_endpoints_admin_role",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L149",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_testing",
+      "target": "user_service_ecommerce_readme_1_register_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L162",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_testing",
+      "target": "user_service_ecommerce_readme_2_login",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L192",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_testing",
+      "target": "user_service_ecommerce_readme_3_get_current_user_v_i_token",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L201",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_testing",
+      "target": "user_service_ecommerce_readme_4_create_address",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L151",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_1_register_user",
+      "target": "user_service_ecommerce_readme_codeblock_6",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L164",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_2_login",
+      "target": "user_service_ecommerce_readme_codeblock_7",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L174",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_2_login",
+      "target": "user_service_ecommerce_readme_codeblock_8",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L194",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_3_get_current_user_v_i_token",
+      "target": "user_service_ecommerce_readme_codeblock_9",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L203",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_4_create_address",
+      "target": "user_service_ecommerce_readme_codeblock_10",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L220",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_security",
+      "target": "user_service_ecommerce_readme_jwt_token_format",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L229",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_security",
+      "target": "user_service_ecommerce_readme_roles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L236",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_security",
+      "target": "user_service_ecommerce_readme_role_based_access_control",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L238",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_role_based_access_control",
+      "target": "user_service_ecommerce_readme_codeblock_11",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L246",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_database_schema",
+      "target": "user_service_ecommerce_readme_users",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L261",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_database_schema",
+      "target": "user_service_ecommerce_readme_addresses",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L278",
+      "weight": 1.0,
+      "source": "user_service_ecommerce_readme_database_schema",
+      "target": "user_service_ecommerce_readme_user_preferences",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "1acc150d98c356aa3a9e1658743164aa67e760f7"
+}

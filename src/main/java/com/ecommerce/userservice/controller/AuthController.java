@@ -1,5 +1,6 @@
 package com.ecommerce.userservice.controller;
 
+import com.ecommerce.userservice.dto.request.ForgotPasswordRequest;
 import com.ecommerce.userservice.dto.request.LoginRequest;
 import com.ecommerce.userservice.dto.request.OAuthRequest;
 import com.ecommerce.userservice.dto.request.RegisterRequest;
@@ -8,6 +9,8 @@ import com.ecommerce.userservice.dto.response.AuthResponse;
 import com.ecommerce.userservice.dto.response.UserResponse;
 import com.ecommerce.userservice.service.AuthService;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -94,23 +97,35 @@ public class AuthController {
     }
 
     @PostMapping("/forgot-password")
-    @Operation(summary = "Forgot password", description = "Send password reset email")
-    public ResponseEntity<ApiResponse<Void>> forgotPassword(@RequestBody Map<String, String> request) {
-        String email = request.get("email");
-        authService.forgotPassword(email);
+    @Operation(
+            summary = "Forgot password",
+            description = "Triggers Keycloak to send an execute-actions email (UPDATE_PASSWORD) when a user exists for this address. "
+                    + "On success over HTTP this API always returns the same message whether or not the email is registered (no account enumeration)."
+    )
+    @io.swagger.v3.oas.annotations.responses.ApiResponses({
+            @io.swagger.v3.oas.annotations.responses.ApiResponse(
+                    responseCode = "200",
+                    description = "Request accepted; if the email is registered and Keycloak can send mail, the user receives the reset flow link.",
+                    content = @Content(
+                            schema = @Schema(implementation = com.ecommerce.userservice.dto.response.ApiResponse.class)
+                    )),
+            @io.swagger.v3.oas.annotations.responses.ApiResponse(
+                    responseCode = "400",
+                    description = "Invalid payload (e.g. missing or invalid email format)",
+                    content = @Content(
+                            schema = @Schema(implementation = com.ecommerce.userservice.dto.response.ApiResponse.class)
+                    )),
+            @io.swagger.v3.oas.annotations.responses.ApiResponse(
+                    responseCode = "500",
+                    description = "Keycloak or mail delivery failure after a matching user was found",
+                    content = @Content(
+                            schema = @Schema(implementation = com.ecommerce.userservice.dto.response.ApiResponse.class)
+                    ))
+    })
+    public ResponseEntity<ApiResponse<Void>> forgotPassword(@Valid @RequestBody ForgotPasswordRequest request) {
+        authService.forgotPassword(request.getEmail());
 
         return ResponseEntity.ok(
                 ApiResponse.success("If the email exists, a password reset link has been sent", null));
-    }
-
-    @PostMapping("/reset-password")
-    @Operation(summary = "Reset password", description = "Reset password using token from email")
-    public ResponseEntity<ApiResponse<Void>> resetPassword(@RequestBody Map<String, String> request) {
-        String token = request.get("token");
-        String newPassword = request.get("newPassword");
-        authService.resetPassword(token, newPassword);
-
-        return ResponseEntity.ok(
-                ApiResponse.success("Password reset successfully", null));
     }
 }

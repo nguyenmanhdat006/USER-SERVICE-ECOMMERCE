@@ -1,0 +1,158 @@
+{
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/mvnw": {
+    "mtime": 1778207193.185558,
+    "hash": "6dae69a928d8a969a700887b3433aac8"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/UserServiceApplication.java": {
+    "mtime": 1778403427.2406697,
+    "hash": "5cacfe9feb1755832965e6ea7e4530ec"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/config/KafkaProducerProperties.java": {
+    "mtime": 1778401684.9735758,
+    "hash": "359a69e1070db58a4c3530b9f89bc31e"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/config/KeycloakConfig.java": {
+    "mtime": 1778207193.1869147,
+    "hash": "b9b014371d15f0fef76375c3792fed02"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/config/SecurityConfig.java": {
+    "mtime": 1778419641.3197074,
+    "hash": "6f2e00fd580bc914eb4be736e57443e2"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/controller/AddressController.java": {
+    "mtime": 1778403302.3338118,
+    "hash": "0f210bec0fe1b0aad0af7269bb97e3dc"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/controller/AuthController.java": {
+    "mtime": 1778419640.9487066,
+    "hash": "13280a4fc55d2192d0c5a84f820af2d1"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/controller/UserController.java": {
+    "mtime": 1778207193.1873293,
+    "hash": "efce31ffec1093b61eca644df9f02f33"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/dto/event/UserRegisteredEvent.java": {
+    "mtime": 1778207193.1876047,
+    "hash": "1b42fb00c8028132b04201910f13fc14"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/dto/request/CreateAddressRequest.java": {
+    "mtime": 1778207193.1876047,
+    "hash": "4c04505d4f176fb352493add9e9e9146"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/dto/request/LoginRequest.java": {
+    "mtime": 1778207193.187895,
+    "hash": "8c848f1a757fe9411f3e8abf4d484578"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/dto/request/RegisterRequest.java": {
+    "mtime": 1778245746.5452454,
+    "hash": "f51ca9d5dc33f3dd9333cca827f68f7f"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/dto/request/UpdateUserRequest.java": {
+    "mtime": 1778207193.187895,
+    "hash": "18971495ed7b150473732dddfb52d686"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/dto/request/OAuthRequest.java": {
+    "mtime": 1778405578.3690457,
+    "hash": "b5c24fdb4847ec54ca313a4c258cb8ed"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/dto/response/AddressResponse.java": {
+    "mtime": 1778207193.187895,
+    "hash": "ccc36158102d66b8298744d90f3bfea9"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/dto/response/ApiResponse.java": {
+    "mtime": 1778229599.997463,
+    "hash": "26e420a90deb0a08520551c5fac8faa9"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/dto/response/AuthResponse.java": {
+    "mtime": 1778419318.8754578,
+    "hash": "ad4f8cc57332403feb9a7e7feace78f3"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/dto/response/UserResponse.java": {
+    "mtime": 1778248289.5353775,
+    "hash": "7268b210d24454250deb39e334221234"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/entity/Address.java": {
+    "mtime": 1778207193.1884012,
+    "hash": "846a5142c7b53f8e4bd8a7401cc730b2"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/entity/User.java": {
+    "mtime": 1778245789.459557,
+    "hash": "ef2e8cd7c60da00dd31eea2f725fbd60"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/entity/UserPreference.java": {
+    "mtime": 1778247727.4590833,
+    "hash": "e443cc720cf5af5c93180ef7cfa3b96c"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/event/UserRegistrationEventProducer.java": {
+    "mtime": 1778207193.18888,
+    "hash": "9b8d8f06402ff422c10c441cdbcc1709"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/exception/AuthenticationException.java": {
+    "mtime": 1778207193.18888,
+    "hash": "f3aaeea071a3f0f91340d6b23492bd6f"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/exception/GlobalExceptionHandler.java": {
+    "mtime": 1778207193.1896856,
+    "hash": "7145ff79723653ca61991b9a5d03d81b"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/exception/ResourceNotFoundException.java": {
+    "mtime": 1778207193.1896856,
+    "hash": "fc4bec35e11f8f3d99d886dde81005ee"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/exception/UserAlreadyExistsException.java": {
+    "mtime": 1778207193.1896856,
+    "hash": "3597d1161d7878a13803af5ade6ed2b0"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/mapper/AddressMapper.java": {
+    "mtime": 1778207193.1897886,
+    "hash": "88b944318193a389c4f7a1fc6585c6d1"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/mapper/UserMapper.java": {
+    "mtime": 1778229813.6595945,
+    "hash": "67d2f01b6fdfffd6c2b4352400e0c6a4"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/repository/AddressRepository.java": {
+    "mtime": 1778207193.1900885,
+    "hash": "27c5b280df92151f5f5618604a23a63d"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/repository/UserPreferenceRepository.java": {
+    "mtime": 1778207193.1903613,
+    "hash": "33d81a507e485252b6251c446764eae5"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/repository/UserRepository.java": {
+    "mtime": 1778207193.1903613,
+    "hash": "97092375f97962f0a3b7eaa8d5a59266"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/service/AddressService.java": {
+    "mtime": 1778207193.1903613,
+    "hash": "7c8eb86990d0060036268d744821c3d4"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/service/KeycloakService.java": {
+    "mtime": 1778419643.0969696,
+    "hash": "a836b98c6fc7fea6cd8bf4be99683302"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/service/UserService.java": {
+    "mtime": 1778295362.6327412,
+    "hash": "9ca50d27bf94b796d633f9af9ca79805"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/java/com/ecommerce/userservice/service/AuthService.java": {
+    "mtime": 1778419640.4450355,
+    "hash": "a3a19f3d844c4412d59b73a563dc657e"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/README.md": {
+    "mtime": 1778207193.1849515,
+    "hash": "525f986865a33dd35b3e5b5de0faed91"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/docker-compose.yml": {
+    "mtime": 1778207193.1852708,
+    "hash": "f6ad89028952888f8ee6fd3817c4dd99"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/resources/application-kafka-sasl.yaml": {
+    "mtime": 1778236085.4848793,
+    "hash": "60e35b14cdd22c6893cc20354178e26e"
+  },
+  "/home/thang/Workspace/ecommerce-services/USER-SERVICE-ECOMMERCE/src/main/resources/application.yaml": {
+    "mtime": 1778419638.4777184,
+    "hash": "d427d9db480c6661a640ac6fc5b30553"
+  }
+}

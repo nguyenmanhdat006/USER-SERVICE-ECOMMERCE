@@ -54,6 +54,9 @@ keycloak:
   client-id: ${KEYCLOAK_CLIENT_ID:ecommerce-backend}
   client-secret: ${KEYCLOAK_CLIENT_SECRET}
 
+  forgot-password:
+    redirect-uri: ${KEYCLOAK_FORGOT_PASSWORD_REDIRECT_URI:http://localhost:5173/}
+
 app:
   kafka:
     producer:
