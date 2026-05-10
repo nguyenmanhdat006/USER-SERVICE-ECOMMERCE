@@ -31,7 +31,7 @@ import java.util.Map;
 @Slf4j
 public class KeycloakService {
 
-    private final Keycloak keycloakAdminClient;
+    private final Keycloak keycloakClient;
 
     @Value("${keycloak.realm}")
     private String realm;
@@ -52,7 +52,7 @@ public class KeycloakService {
 
     public String createUser(RegisterRequest request) {
         try {
-            RealmResource realmResource = keycloakAdminClient.realm(realm);
+            RealmResource realmResource = keycloakClient.realm(realm);
             UsersResource usersResource = realmResource.users();
 
             List<UserRepresentation> existingUsers = usersResource.search(request.getEmail());
@@ -212,7 +212,7 @@ public class KeycloakService {
 
     public void assignRoleToUser(String userId, String roleName) {
         try {
-            RealmResource realmResource = keycloakAdminClient.realm(realm);
+            RealmResource realmResource = keycloakClient.realm(realm);
 
             // Get role
             var role = realmResource.roles().get(roleName).toRepresentation();
@@ -231,7 +231,7 @@ public class KeycloakService {
 
     public UserRepresentation getUserById(String userId) {
         try {
-            return keycloakAdminClient.realm(realm).users().get(userId).toRepresentation();
+            return keycloakClient.realm(realm).users().get(userId).toRepresentation();
         } catch (Exception e) {
             log.error("Error getting user from Keycloak", e);
             throw new RuntimeException("Failed to get user: " + e.getMessage());
@@ -240,7 +240,7 @@ public class KeycloakService {
 
     public UserRepresentation findUserByEmail(String email) {
         try {
-            List<UserRepresentation> users = keycloakAdminClient.realm(realm)
+            List<UserRepresentation> users = keycloakClient.realm(realm)
                     .users().searchByEmail(email, true); // exact match
             return users.isEmpty() ? null : users.get(0);
         } catch (Exception e) {
@@ -252,7 +252,7 @@ public class KeycloakService {
     public void sendResetPasswordEmail(String userId) {
         List<String> actions = List.of("UPDATE_PASSWORD");
         try {
-            keycloakAdminClient.realm(realm)
+            keycloakClient.realm(realm)
                     .users()
                     .get(userId)
                     .executeActionsEmail(clientId, forgotPasswordRedirectUri, actions);
@@ -265,7 +265,7 @@ public class KeycloakService {
 
     public void updateUser(String userId, UserRepresentation user) {
         try {
-            keycloakAdminClient.realm(realm).users().get(userId).update(user);
+            keycloakClient.realm(realm).users().get(userId).update(user);
             log.info("User {} updated successfully in Keycloak", userId);
         } catch (Exception e) {
             log.error("Error updating user in Keycloak", e);
@@ -275,7 +275,7 @@ public class KeycloakService {
 
     public void deleteUser(String userId) {
         try {
-            keycloakAdminClient.realm(realm).users().get(userId).remove();
+            keycloakClient.realm(realm).users().get(userId).remove();
             log.info("User {} deleted from Keycloak", userId);
         } catch (Exception e) {
             log.error("Error deleting user from Keycloak", e);
