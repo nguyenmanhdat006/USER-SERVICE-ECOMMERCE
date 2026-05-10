@@ -14,4 +14,3 @@ public class KafkaProducerProperties {
      */
     private String userRegisteredTopic = "user.registered";
 }
-

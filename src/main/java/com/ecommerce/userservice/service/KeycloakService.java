@@ -20,7 +20,8 @@ import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.Collections;
+import java.nio.charset.StandardCharsets;
+import java.util.Base64;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
@@ -46,34 +47,27 @@ public class KeycloakService {
 
     private final RestTemplate restTemplate = new RestTemplate();
 
-    /**
-     * Create user in Keycloak
-     */
     public String createUser(RegisterRequest request) {
         try {
             RealmResource realmResource = keycloakAdminClient.realm(realm);
             UsersResource usersResource = realmResource.users();
 
-            // Check if user already exists
             List<UserRepresentation> existingUsers = usersResource.search(request.getEmail());
             if (!existingUsers.isEmpty()) {
                 throw new UserAlreadyExistsException("User with email " + request.getEmail() + " already exists");
             }
 
-            // Create user representation
             UserRepresentation user = new UserRepresentation();
             user.setUsername(request.getEmail());
             user.setEmail(request.getEmail());
             user.setFirstName(request.getFullName().split(" ")[0]);
-            user.setLastName(request.getFullName().contains(" ") ?
-                    request.getFullName().substring(request.getFullName().indexOf(" ") + 1) : "");
+            user.setLastName(request.getFullName().contains(" ")
+                    ? request.getFullName().substring(request.getFullName().indexOf(" ") + 1)
+                    : "");
             user.setEnabled(true);
-            user.setEmailVerified(true); // Changed to true
+            user.setEmailVerified(true);
 
-            // CRITICAL: Remove all required actions
             user.setRequiredActions(Collections.emptyList());
-
-            // Create user
             Response response = usersResource.create(user);
 
             if (response.getStatus() != 201) {
@@ -81,11 +75,9 @@ public class KeycloakService {
                 throw new RuntimeException("Failed to create user in Keycloak");
             }
 
-            // Get user ID from location header
             String locationHeader = response.getHeaderString("Location");
             String userId = locationHeader.substring(locationHeader.lastIndexOf('/') + 1);
 
-            // Set password
             CredentialRepresentation credential = new CredentialRepresentation();
             credential.setType(CredentialRepresentation.PASSWORD);
             credential.setValue(request.getPassword());
@@ -93,7 +85,6 @@ public class KeycloakService {
 
             usersResource.get(userId).resetPassword(credential);
 
-            // Assign default role (CUSTOMER)
             assignRoleToUser(userId, "CUSTOMER");
 
             log.info("User created successfully in Keycloak with ID: {}", userId);
@@ -107,9 +98,6 @@ public class KeycloakService {
         }
     }
 
-    /**
-     * Authenticate user and get tokens
-     */
     public AuthResponse login(LoginRequest request) {
         try {
             String tokenEndpoint = serverUrl + "/realms/" + realm + "/protocol/openid-connect/token";
@@ -131,8 +119,7 @@ public class KeycloakService {
                     tokenEndpoint,
                     HttpMethod.POST,
                     entity,
-                    Map.class
-            );
+                    Map.class);
 
             if (response.getStatusCode() == HttpStatus.OK && response.getBody() != null) {
                 Map<String, Object> tokenResponse = response.getBody();
@@ -153,9 +140,6 @@ public class KeycloakService {
         }
     }
 
-    /**
-     * Refresh access token
-     */
     public AuthResponse refreshToken(String refreshToken) {
         try {
             String tokenEndpoint = serverUrl + "/realms/" + realm + "/protocol/openid-connect/token";
@@ -175,8 +159,7 @@ public class KeycloakService {
                     tokenEndpoint,
                     HttpMethod.POST,
                     entity,
-                    Map.class
-            );
+                    Map.class);
 
             if (response.getStatusCode() == HttpStatus.OK && response.getBody() != null) {
                 Map<String, Object> tokenResponse = response.getBody();
@@ -197,9 +180,6 @@ public class KeycloakService {
         }
     }
 
-    /**
-     * Logout user
-     */
     public void logout(String refreshToken) {
         try {
             String logoutEndpoint = serverUrl + "/realms/" + realm + "/protocol/openid-connect/logout";
@@ -218,20 +198,15 @@ public class KeycloakService {
                     logoutEndpoint,
                     HttpMethod.POST,
                     entity,
-                    Void.class
-            );
+                    Void.class);
 
             log.info("User logged out successfully");
 
         } catch (Exception e) {
             log.error("Error during logout", e);
-            // Don't throw exception, just log it
         }
     }
 
-    /**
-     * Assign role to user
-     */
     public void assignRoleToUser(String userId, String roleName) {
         try {
             RealmResource realmResource = keycloakAdminClient.realm(realm);
@@ -251,9 +226,6 @@ public class KeycloakService {
         }
     }
 
-    /**
-     * Get user by ID from Keycloak
-     */
     public UserRepresentation getUserById(String userId) {
         try {
             return keycloakAdminClient.realm(realm).users().get(userId).toRepresentation();
@@ -263,9 +235,17 @@ public class KeycloakService {
         }
     }
 
-    /**
-     * Update user in Keycloak
-     */
+    public UserRepresentation findUserByEmail(String email) {
+        try {
+            List<UserRepresentation> users = keycloakAdminClient.realm(realm)
+                    .users().searchByEmail(email, true); // exact match
+            return users.isEmpty() ? null : users.get(0);
+        } catch (Exception e) {
+            log.error("Error searching Keycloak user by email={}", email, e);
+            throw new RuntimeException("Failed to find user by email: " + e.getMessage());
+        }
+    }
+
     public void updateUser(String userId, UserRepresentation user) {
         try {
             keycloakAdminClient.realm(realm).users().get(userId).update(user);
@@ -276,9 +256,6 @@ public class KeycloakService {
         }
     }
 
-    /**
-     * Delete user from Keycloak
-     */
     public void deleteUser(String userId) {
         try {
             keycloakAdminClient.realm(realm).users().get(userId).remove();
@@ -286,6 +263,78 @@ public class KeycloakService {
         } catch (Exception e) {
             log.error("Error deleting user from Keycloak", e);
             throw new RuntimeException("Failed to delete user: " + e.getMessage());
+        }
+    }
+
+    public AuthResponse exchangeAuthorizationCode(String code, String redirectUri) {
+        try {
+            String tokenEndpoint = serverUrl + "/realms/" + realm + "/protocol/openid-connect/token";
+
+            HttpHeaders headers = new HttpHeaders();
+            headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
+
+            MultiValueMap<String, String> body = new LinkedMultiValueMap<>();
+            body.add("grant_type", "authorization_code");
+            body.add("client_id", clientId);
+            body.add("client_secret", clientSecret);
+            body.add("code", code);
+            body.add("redirect_uri", redirectUri);
+
+            HttpEntity<MultiValueMap<String, String>> entity = new HttpEntity<>(body, headers);
+
+            ResponseEntity<Map> response = restTemplate.exchange(
+                    tokenEndpoint,
+                    HttpMethod.POST,
+                    entity,
+                    Map.class);
+
+            if (response.getStatusCode() == HttpStatus.OK && response.getBody() != null) {
+                Map<String, Object> tokenResponse = response.getBody();
+
+                return AuthResponse.builder()
+                        .accessToken((String) tokenResponse.get("access_token"))
+                        .refreshToken((String) tokenResponse.get("refresh_token"))
+                        .expiresIn(((Number) tokenResponse.get("expires_in")).longValue())
+                        .tokenType((String) tokenResponse.get("token_type"))
+                        .idToken((String) tokenResponse.get("id_token"))
+                        .build();
+            }
+
+            throw new AuthenticationException("Failed to exchange authorization code");
+
+        } catch (AuthenticationException e) {
+            throw e;
+        } catch (Exception e) {
+            log.error("Error exchanging authorization code with Keycloak", e);
+            throw new AuthenticationException("Social login failed: " + e.getMessage());
+        }
+    }
+
+    @SuppressWarnings("unchecked")
+    public String getEmailFromIdToken(String idToken) {
+        try {
+            String[] parts = idToken.split("\\.");
+            if (parts.length < 2) {
+                throw new AuthenticationException("Invalid id_token format");
+            }
+
+            byte[] decodedBytes = Base64.getUrlDecoder().decode(parts[1]);
+            String payloadJson = new String(decodedBytes, StandardCharsets.UTF_8);
+
+            com.fasterxml.jackson.databind.ObjectMapper mapper = new com.fasterxml.jackson.databind.ObjectMapper();
+            Map<String, Object> claims = mapper.readValue(payloadJson, Map.class);
+
+            String email = (String) claims.get("email");
+            if (email == null || email.isBlank()) {
+                throw new AuthenticationException("Email claim not found in id_token");
+            }
+
+            return email;
+        } catch (AuthenticationException e) {
+            throw e;
+        } catch (Exception e) {
+            log.error("Failed to decode id_token", e);
+            throw new AuthenticationException("Could not extract email from id_token: " + e.getMessage());
         }
     }
 }

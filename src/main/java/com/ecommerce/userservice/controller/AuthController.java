@@ -1,6 +1,7 @@
 package com.ecommerce.userservice.controller;
 
 import com.ecommerce.userservice.dto.request.LoginRequest;
+import com.ecommerce.userservice.dto.request.OAuthRequest;
 import com.ecommerce.userservice.dto.request.RegisterRequest;
 import com.ecommerce.userservice.dto.response.ApiResponse;
 import com.ecommerce.userservice.dto.response.AuthResponse;
@@ -54,6 +55,19 @@ public class AuthController {
         return ResponseEntity.ok(ApiResponse.success(authResponse));
     }
 
+    @PostMapping("/oauth2/{provider}")
+    @Operation(
+            summary = "Social login callback",
+            description = "Exchange the Keycloak authorization code for tokens after social provider (Google, Facebook, etc.) authentication. "
+                    + "Frontend must pass the code and the exact redirect_uri it used to initiate the flow.")
+    public ResponseEntity<ApiResponse<AuthResponse>> socialLogin(
+            @PathVariable String provider,
+            @Valid @RequestBody OAuthRequest request) {
+        log.info("Social login callback received for provider: {}", provider);
+        AuthResponse authResponse = authService.socialLogin(request, provider);
+        return ResponseEntity.ok(ApiResponse.success(authResponse));
+    }
+
     @PostMapping("/refresh")
     @Operation(summary = "Refresh token", description = "Get new access token using refresh token")
     public ResponseEntity<ApiResponse<AuthResponse>> refreshToken(@RequestBody Map<String, String> request) {
@@ -86,8 +100,7 @@ public class AuthController {
         authService.forgotPassword(email);
 
         return ResponseEntity.ok(
-            ApiResponse.success("If the email exists, a password reset link has been sent", null)
-        );
+                ApiResponse.success("If the email exists, a password reset link has been sent", null));
     }
 
     @PostMapping("/reset-password")
@@ -98,7 +111,6 @@ public class AuthController {
         authService.resetPassword(token, newPassword);
 
         return ResponseEntity.ok(
-            ApiResponse.success("Password reset successfully", null)
-        );
+                ApiResponse.success("Password reset successfully", null));
     }
 }
