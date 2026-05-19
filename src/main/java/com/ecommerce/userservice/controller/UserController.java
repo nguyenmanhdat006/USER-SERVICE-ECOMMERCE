@@ -66,10 +66,4 @@ public class UserController {
         userService.deleteUser(id);
         return ResponseEntity.ok(ApiResponse.success("User deleted successfully", null));
     }
-
-    // TODO: Add avatar upload endpoint
-    // @PostMapping("/me/avatar")
-    // public ResponseEntity<ApiResponse<String>> uploadAvatar(@RequestParam("file") MultipartFile file) {
-    //     // Implement avatar upload logic
-    // }
 }

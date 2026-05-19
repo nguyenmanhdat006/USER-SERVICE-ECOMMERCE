@@ -25,6 +25,9 @@ public class UpdateUserRequest {
     )
     private String phone;
 
+    @Size(max = 500, message = "Avatar URL must not exceed 500 characters")
+    private String avatarUrl;
+
     private LocalDate dateOfBirth;
 
     private User.Gender gender;
