@@ -14,6 +14,7 @@ import org.keycloak.admin.client.resource.UsersResource;
 import org.keycloak.representations.idm.CredentialRepresentation;
 import org.keycloak.representations.idm.UserRepresentation;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.util.LinkedMultiValueMap;
@@ -118,11 +119,11 @@ public class KeycloakService {
 
             HttpEntity<MultiValueMap<String, String>> entity = new HttpEntity<>(body, headers);
 
-            ResponseEntity<Map> response = restTemplate.exchange(
+            ResponseEntity<Map<String, Object>> response = restTemplate.exchange(
                     tokenEndpoint,
                     HttpMethod.POST,
                     entity,
-                    Map.class);
+                    new ParameterizedTypeReference<Map<String, Object>>() {});
 
             if (response.getStatusCode() == HttpStatus.OK && response.getBody() != null) {
                 Map<String, Object> tokenResponse = response.getBody();
@@ -158,11 +159,11 @@ public class KeycloakService {
 
             HttpEntity<MultiValueMap<String, String>> entity = new HttpEntity<>(body, headers);
 
-            ResponseEntity<Map> response = restTemplate.exchange(
+            ResponseEntity<Map<String, Object>> response = restTemplate.exchange(
                     tokenEndpoint,
                     HttpMethod.POST,
                     entity,
-                    Map.class);
+                    new ParameterizedTypeReference<Map<String, Object>>() {});
 
             if (response.getStatusCode() == HttpStatus.OK && response.getBody() != null) {
                 Map<String, Object> tokenResponse = response.getBody();
@@ -299,11 +300,11 @@ public class KeycloakService {
 
             HttpEntity<MultiValueMap<String, String>> entity = new HttpEntity<>(body, headers);
 
-            ResponseEntity<Map> response = restTemplate.exchange(
+            ResponseEntity<Map<String, Object>> response = restTemplate.exchange(
                     tokenEndpoint,
                     HttpMethod.POST,
                     entity,
-                    Map.class);
+                    new ParameterizedTypeReference<Map<String, Object>>() {});
 
             if (response.getStatusCode() == HttpStatus.OK && response.getBody() != null) {
                 Map<String, Object> tokenResponse = response.getBody();

@@ -3,7 +3,6 @@ package com.ecommerce.userservice.config;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -52,7 +51,8 @@ public class SecurityConfig {
                                 "/api/auth/login",
                                 "/api/auth/refresh",
                                 "/api/auth/forgot-password",
-                                "/api/auth/oauth2/*"
+                                "/api/auth/oauth2/*",
+                                "/api/users/stats/**"
                         ).permitAll()
 
                         // Swagger/OpenAPI
@@ -97,9 +97,10 @@ public class SecurityConfig {
             Map<String, Object> resourceAccess = jwt.getClaim("resource_access");
             Collection<GrantedAuthority> resourceRoles = List.of();
 
-            if (resourceAccess != null && resourceAccess.containsKey(keycloakClientId)) {
-                Map<String, Object> clientAccess = (Map<String, Object>) resourceAccess.get(keycloakClientId);
-                if (clientAccess != null && clientAccess.get("roles") instanceof List<?> roles) {
+            if (resourceAccess != null && resourceAccess.get(keycloakClientId) instanceof Map<?, ?> clientAccessRaw) {
+                @SuppressWarnings("unchecked")
+                Map<String, Object> clientAccess = (Map<String, Object>) clientAccessRaw;
+                if (clientAccess.get("roles") instanceof List<?> roles) {
                     resourceRoles = roles.stream()
                             .map(String::valueOf)
                             .map(role -> new SimpleGrantedAuthority("ROLE_" + role))
